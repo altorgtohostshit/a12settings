@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/preview_seek_bar_view_pager"/>
+        <LinearLayout android:orientation="vertical" android:paddingTop="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="?android:attr/listPreferredItemPaddingStart" android:paddingEnd="?android:attr/listPreferredItemPaddingEnd">
+            <com.android.settings.widget.DotsPageIndicator android:layout_gravity="center_horizontal" android:id="@+id/page_indicator" android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/PreviewPagerPageIndicator"/>
+            <TextView android:textAppearance="@style/TextAppearance.DeviceDefault.Widget.TextView" android:layout_gravity="center_horizontal" android:id="@+id/current_label" android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:elevation="2dp"/>
+            <LinearLayout android:gravity="center_vertical" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layoutDirection="ltr">
+                <ImageView android:id="@+id/smaller" android:background="?android:attr/selectableItemBackgroundBorderless" android:focusable="true" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_font_size_16dp" android:scaleType="center" android:tint="?android:attr/textColorPrimary" android:contentDescription="@string/font_size_make_smaller_desc" android:tintMode="src_in"/>
+                <com.android.settings.widget.LabeledSeekBar android:id="@+id/seek_bar" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" style="@android:style/Animation.LockScreen"/>
+                <ImageView android:id="@+id/larger" android:background="?android:attr/selectableItemBackgroundBorderless" android:focusable="true" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_font_size_24dp" android:scaleType="center" android:tint="?android:attr/textColorPrimary" android:contentDescription="@string/font_size_make_larger_desc" android:tintMode="src_in"/>
+            </LinearLayout>
+            <TextView android:textAppearance="@android:style/WindowTitleBackground.DeviceDefault" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:text="@string/font_size_summary"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/privacy_dashboard_title" android:key="privacy_dashboard_page" app:initialExpandedChildrenCount="4">
+    <Preference android:title="@string/work_policy_privacy_settings" android:key="work_policy_info" android:summary="@string/work_policy_privacy_settings_summary" app:controller="com.android.settings.privacy.WorkPolicyInfoPreferenceController" app:allowDividerAbove="true"/>
+    <Preference android:title="@string/interact_across_profiles_title" android:key="interact_across_profiles_privacy" android:fragment="com.android.settings.applications.specialaccess.interactacrossprofiles.InteractAcrossProfilesSettings" app:controller="com.android.settings.applications.specialaccess.interactacrossprofiles.InteractAcrossProfilesController" app:searchable="false"/>
+    <Preference android:title="@string/accessibility_usage_title" android:key="privacy_accessibility_usage" app:controller="com.android.settings.privacy.AccessibilityUsagePreferenceController" app:allowDividerAbove="true">
+        <intent android:action="android.intent.action.REVIEW_ACCESSIBILITY_SERVICES"/>
+    </Preference>
+    <Preference android:title="@string/permissions_usage_title" android:key="privacy_permissions_usage" android:summary="@string/permissions_usage_summary" app:controller="com.android.settings.privacy.PrivacyHubPreferenceController" app:allowDividerAbove="true" app:searchable="false">
+        <intent android:action="android.intent.action.REVIEW_PERMISSION_USAGE"/>
+    </Preference>
+    <Preference android:title="@string/app_permissions" android:key="privacy_manage_perms" android:summary="@string/runtime_permissions_summary_control_app_access" app:searchable="false">
+        <intent android:action="android.intent.action.MANAGE_PERMISSIONS"/>
+    </Preference>
+    <SwitchPreference android:title="@string/camera_toggle_title" android:key="privacy_camera_toggle" android:summary="@string/sensor_toggle_description" app:controller="com.android.settings.privacy.CameraToggleController"/>
+    <SwitchPreference android:title="@string/mic_toggle_title" android:key="privacy_mic_toggle" android:summary="@string/sensor_toggle_description" app:controller="com.android.settings.privacy.MicToggleController"/>
+    <SwitchPreference android:title="@string/show_password" android:key="show_password" android:summary="@string/show_password_summary" app:controller="com.android.settings.security.ShowPasswordPreferenceController"/>
+    <com.android.settings.RestrictedListPreference android:title="@string/lock_screen_notifs_title" android:key="privacy_lock_screen_notifications" android:summary="@string/summary_placeholder" app:searchable="false"/>
+    <PreferenceCategory android:layout="@layout/preference_category_no_label" android:key="privacy_services"/>
+    <PreferenceCategory android:key="dashboard_tile_placeholder"/>
+    <PreferenceCategory android:title="@string/profile_section_header" android:key="privacy_work_profile_notifications_category" android:order="998" app:searchable="false">
+        <com.android.settings.RestrictedListPreference android:title="@string/locked_work_profile_notification_title" android:key="privacy_lock_screen_work_profile_notifications" android:summary="@string/summary_placeholder" android:order="999" app:searchable="false"/>
+    </PreferenceCategory>
+    <SwitchPreference android:title="@string/content_capture" android:key="content_capture" android:summary="@string/content_capture_summary" app:controller="com.android.settings.privacy.EnableContentCapturePreferenceController"/>
+    <com.android.settings.widget.PrimarySwitchPreference android:title="@string/content_capture" android:key="content_capture_custom_settings" android:summary="@string/content_capture_summary" app:controller="com.android.settings.privacy.EnableContentCaptureWithServiceSettingsPreferenceController"/>
+    <SwitchPreference android:title="@string/show_clip_access_notification" android:key="show_clip_access_notification" android:summary="@string/show_clip_access_notification_summary" app:controller="com.android.settings.privacy.ShowClipAccessNotificationPreferenceController"/>
+</PreferenceScreen>

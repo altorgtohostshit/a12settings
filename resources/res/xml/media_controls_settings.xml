@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/media_controls_title">
+    <com.android.settings.widget.SettingsMainSwitchPreference android:title="@string/media_controls_summary" android:key="media_controls_resume_switch" app:controller="com.android.settings.sound.MediaControlsPreferenceController" app:allowDividerAbove="true" app:keywords="@string/keywords_media_controls"/>
+    <com.android.settingslib.widget.TopIntroPreference android:title="@string/media_controls_resume_description" app:searchable="false"/>
+    <PreferenceCategory android:title="@string/media_controls_apps_title" android:key="media_controls_resumable_apps" app:controller="com.android.settings.sound.ResumableMediaAppsController"/>
+</PreferenceScreen>

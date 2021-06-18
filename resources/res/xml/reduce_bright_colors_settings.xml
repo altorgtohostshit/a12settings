@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:persistent="false" android:title="@string/reduce_bright_colors_preference_title">
+    <com.android.settings.widget.SeekBarPreference android:persistent="false" android:title="@string/reduce_bright_colors_intensity_preference_title" android:key="rbc_intensity"/>
+    <SwitchPreference android:persistent="false" android:title="@string/reduce_bright_colors_persist_preference_title" android:key="rbc_persist"/>
+</PreferenceScreen>

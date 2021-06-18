@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/accelerometer_title">
+    <com.android.settingslib.widget.BannerMessagePreference android:title="@string/adaptive_sleep_title_no_permission" android:key="face_rotate_permission" android:summary="@string/auto_rotate_summary_no_permission" app:controller="com.android.settings.display.SmartAutoRotatePermissionController"/>
+    <com.android.settingslib.widget.BannerMessagePreference android:title="@string/auto_rotate_camera_lock_title" android:key="camera_lock_state" android:summary="@string/auto_rotate_camera_lock_summary" app:controller="com.android.settings.display.SmartAutoRotateCameraStateController"/>
+    <com.android.settingslib.widget.BannerMessagePreference android:title="@string/ambient_camera_summary_battery_saver_on" android:key="camera_battery_saver_state" app:controller="com.android.settings.display.SmartAutoRotateBatterySaverController"/>
+    <SwitchPreference android:title="@string/auto_rotate_switch_face_based" android:key="face_based_rotate" app:controller="com.android.settings.display.SmartAutoRotateController"/>
+    <com.android.settingslib.widget.FooterPreference android:icon="@drawable/ic_privacy_shield_24dp" android:selectable="false" app:searchable="false"/>
+</PreferenceScreen>

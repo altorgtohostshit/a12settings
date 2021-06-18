@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <SeekBar android:id="@+id/assist_gesture_sensitivity_seekbar" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="@integer/gesture_assist_sensitivity_max" android:progress="@integer/gesture_assist_sensitivity_default" android:layout_centerHorizontal="true" style="@android:style/Animation.LockScreen"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-10dp">
+        <TextView android:layout_gravity="top|left|center_vertical|center_horizontal|center|start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/assist_gesture_enrollment_seekbar_light" android:layout_marginStart="16dp"/>
+        <TextView android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/assist_gesture_enrollment_seekbar_strong" android:layout_marginEnd="16dp"/>
+    </FrameLayout>
+</merge>

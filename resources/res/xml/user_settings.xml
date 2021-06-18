@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/user_settings_title" android:key="user_settings_screen">
+    <com.android.settingslib.widget.TopIntroPreference android:title="@string/user_settings_footer_text" android:key="multiuser_top_intro" app:controller="com.android.settings.users.MultiUserTopIntroPreferenceController"/>
+    <PreferenceCategory android:title="@string/user_list_title" android:key="user_list" android:order="10" app:searchable="false"/>
+    <com.android.settingslib.RestrictedPreference android:title="@string/guest_new_guest" android:key="guest_add" android:order="15"/>
+    <com.android.settingslib.RestrictedPreference android:icon="@drawable/ic_add_40dp" android:title="@string/user_add_user_or_profile_menu" android:key="user_add" android:order="20"/>
+    <com.android.settingslib.RestrictedSwitchPreference android:title="@string/user_add_on_lockscreen_menu" android:key="user_settings_add_users_when_locked" android:order="105" android:singleLineTitle="false" app:allowDividerAbove="true"/>
+</PreferenceScreen>

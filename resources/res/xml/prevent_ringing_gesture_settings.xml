@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/gesture_prevent_ringing_screen_title">
+    <com.android.settingslib.widget.MainSwitchPreference android:key="gesture_prevent_ringing_switch"/>
+    <com.android.settings.widget.VideoPreference android:key="gesture_prevent_ringing_video" app:animation="@raw/gesture_prevent_ringing" app:controller="com.android.settings.widget.VideoPreferenceController" app:preview="@drawable/gesture_prevent_ringing"/>
+    <PreferenceCategory android:title="@string/gesture_prevent_ringing_title" android:key="gesture_prevent_ringing_category"/>
+</PreferenceScreen>

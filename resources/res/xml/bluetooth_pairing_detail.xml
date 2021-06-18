@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/bluetooth_pairing_pref_title">
+    <Preference android:title="@string/bluetooth_device_name" android:key="bt_pair_rename_devices" android:summary="@string/summary_placeholder" app:controller="com.android.settings.bluetooth.BluetoothDeviceRenamePreferenceController"/>
+    <com.android.settings.bluetooth.BluetoothProgressCategory android:title="@string/bluetooth_paired_device_title" android:key="available_devices"/>
+    <com.android.settingslib.widget.FooterPreference/>
+</PreferenceScreen>

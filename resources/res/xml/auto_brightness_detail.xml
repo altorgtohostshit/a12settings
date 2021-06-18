@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/auto_brightness_title">
+    <com.android.settingslib.widget.MainSwitchPreference android:title="@string/adaptive_brightness_main_switch_title" android:key="auto_brightness" app:controller="com.android.settings.display.AutoBrightnessDetailPreferenceController" app:keywords="@string/keywords_display_auto_brightness"/>
+    <com.android.settings.widget.VideoPreference android:title="@string/summary_placeholder" android:key="auto_brightness_video" app:animation="@raw/aab_brightness" app:controller="com.android.settings.widget.VideoPreferenceController" app:preview="@drawable/aab_brightness"/>
+    <com.android.settingslib.widget.FooterPreference android:title="@string/auto_brightness_description" android:selectable="false" android:key="auto_brightness_footer" app:searchable="false"/>
+</PreferenceScreen>

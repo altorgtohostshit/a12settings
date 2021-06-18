@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.setupdesign.GlifLayout xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/setup_wizard_layout" android:layout_width="match_parent" android:layout_height="match_parent" style="?attr/fingerprint_layout_theme">
+    <LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/SudContentFrame">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <com.google.android.setupdesign.view.FillContentLayout android:paddingTop="0dp" android:paddingBottom="0dp" android:layout_width="@dimen/fingerprint_progress_bar_max_size" android:layout_height="@dimen/fingerprint_progress_bar_max_size" android:layout_marginVertical="24dp">
+                <include android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/fingerprint_enroll_enrolling_content"/>
+            </com.google.android.setupdesign.view.FillContentLayout>
+            <TextView android:gravity="center" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/error_text" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:accessibilityLiveRegion="polite" style="@style/TextAppearance.ErrorText"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.setupdesign.GlifLayout>

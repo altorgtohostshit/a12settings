@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:persistent="false" android:title="@string/accessibility_shortcuts_settings_title" android:key="accessibility_shortcuts_settings">
+    <Preference android:persistent="false" android:title="@string/accessibility_button_title" android:key="accessibility_button_preference" android:summary="@string/accessibility_button_summary" android:fragment="com.android.settings.accessibility.AccessibilityButtonFragment"/>
+    <SwitchPreference android:persistent="false" android:title="@string/accessibility_shortcut_service_on_lock_screen_title" android:key="accessibility_shortcut_preference" android:summary="@string/accessibility_shortcut_description" app:controller="com.android.settings.accessibility.AccessibilityShortcutPreferenceController"/>
+</PreferenceScreen>

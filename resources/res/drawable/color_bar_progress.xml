@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@android:id/background">
+        <shape android:tint="0x106017d" android:shape="rectangle">
+            <corners android:radius="@android:dimen/leanback_setup_translation_backward_out_content_start"/>
+            <size android:height="10dp"/>
+            <solid android:color="0x10602b3"/>
+        </shape>
+    </item>r 
+    <item android:id="@android:id/secondaryProgress">
+        <scale android:scaleWidth="100%">
+            <shape android:tint="?android:attr/colorControlActivated" android:shape="rectangle">
+                <corners android:radius="@android:dimen/leanback_setup_translation_backward_out_content_start"/>
+                <size android:height="10dp"/>
+                <solid android:color="0x10602b3"/>
+            </shape>
+        </scale>
+    </item>
+    <item android:id="@android:id/progress">
+        <scale android:scaleWidth="100%">
+            <shape android:tint="?android:attr/colorControlActivated" android:shape="rectangle">
+                <corners android:radius="@android:dimen/leanback_setup_translation_backward_out_content_start"/>
+                <size android:height="10dp"/>
+                <solid android:color="@android:color/white"/>
+            </shape>
+        </scale>
+    </item>
+</layer-list>

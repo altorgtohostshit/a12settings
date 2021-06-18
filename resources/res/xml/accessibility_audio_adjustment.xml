@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:persistent="false" android:title="@string/accessibility_audio_adjustment_title" android:key="accessibility_audio_adjustment">
+    <SwitchPreference android:persistent="false" android:title="@string/accessibility_toggle_primary_mono_title" android:key="toggle_primary_mono" android:summary="@string/accessibility_toggle_primary_mono_summary" app:controller="com.android.settings.accessibility.PrimaryMonoPreferenceController"/>
+    <com.android.settings.accessibility.BalanceSeekBarPreference android:persistent="false" android:title="@string/accessibility_toggle_primary_balance_title" android:key="seekbar_primary_balance"/>
+</PreferenceScreen>

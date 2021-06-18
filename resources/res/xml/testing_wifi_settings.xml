@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/testing_wifi_info" android:key="parent">
+    <Preference android:title="@string/wifi_api_test">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.Settings$WifiAPITestActivity"/>
+    </Preference>
+    <Preference android:title="@string/wifi_config_info">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.wifi.WifiConfigInfo"/>
+    </Preference>
+    <Preference android:title="@string/wifi_status_test">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.wifi.WifiStatusTest"/>
+    </Preference>
+</PreferenceScreen>

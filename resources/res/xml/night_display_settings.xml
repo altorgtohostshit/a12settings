@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/night_display_title" app:keywords="@string/keywords_display_night_display">
+    <com.android.settingslib.widget.MainSwitchPreference android:title="@string/night_light_main_switch_title" android:key="night_display_activated" app:controller="com.android.settings.display.NightDisplayActivationPreferenceController"/>
+    <com.android.settingslib.widget.BannerMessagePreference android:title="@string/twilight_mode_location_off_dialog_message" android:key="dark_ui_location_off" app:controller="com.android.settings.display.TwilightLocationPreferenceController"/>
+    <com.android.settingslib.widget.TopIntroPreference android:title="@string/night_display_text" android:key="night_display_top_intro" app:controller="com.android.settings.display.NightDisplayTopIntroPreferenceController"/>
+    <DropDownPreference android:title="@string/night_display_auto_mode_title" android:key="night_display_auto_mode" android:summary="%s" app:controller="com.android.settings.display.NightDisplayAutoModePreferenceController" app:allowDividerAbove="true"/>
+    <Preference android:title="@string/night_display_start_time_title" android:key="night_display_start_time" app:controller="com.android.settings.display.NightDisplayCustomStartTimePreferenceController"/>
+    <Preference android:title="@string/night_display_end_time_title" android:key="night_display_end_time" app:controller="com.android.settings.display.NightDisplayCustomEndTimePreferenceController"/>
+    <com.android.settings.widget.SeekBarPreference android:title="@string/night_display_temperature_title" android:key="night_display_temperature" app:controller="com.android.settings.display.NightDisplayIntensityPreferenceController" app:keywords="@string/keywords_display_night_display" app:unavailableSliceSubtitle="@string/night_display_not_currently_on"/>
+</PreferenceScreen>

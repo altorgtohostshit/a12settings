@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:shape="rectangle">
+    <solid android:color="?android:bool/config_allowTheaterModeWakeFromDock"/>
+    <corners android:topLeftRadius="?unknown_attr_ref: 1010571" android:topRightRadius="?unknown_attr_ref: 1010571" android:bottomLeftRadius="?unknown_attr_ref: 1010571" android:bottomRightRadius="?unknown_attr_ref: 1010571"/>
+</shape>

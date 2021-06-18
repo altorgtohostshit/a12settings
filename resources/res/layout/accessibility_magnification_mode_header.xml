@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:padding="?android:attr/dialogPreferredPadding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="16sp" android:textColor="?android:attr/textColorAlertDialogListItem" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/accessibility_magnification_area_settings_message" style="?android:attr/textAppearanceMedium"/>
+</FrameLayout>

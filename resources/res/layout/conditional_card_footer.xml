@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="end" android:orientation="horizontal" android:paddingTop="@dimen/contextual_condition_footer_padding_top" android:layout_width="match_parent" android:layout_height="@dimen/contextual_condition_footer_height" android:contentDescription="@string/homepage_condition_footer_content_description" android:paddingEnd="@dimen/contextual_condition_footer_padding_end">
+    <ImageView android:id="@+id/collapse_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_expand_less"/>
+</LinearLayout>

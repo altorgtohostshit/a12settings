@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/account_settings_title" app:keywords="@string/keywords_accounts">
+    <com.android.settingslib.widget.LayoutPreference android:layout="@layout/settings_entity_header" android:selectable="false" android:key="account_header" android:order="-10000"/>
+    <PreferenceCategory android:key="dashboard_tile_placeholder" android:order="100"/>
+    <Preference android:icon="@drawable/ic_sync" android:title="@string/account_sync_title" android:key="account_sync" android:order="200"/>
+    <com.android.settingslib.widget.LayoutPreference android:layout="@layout/remove_account_button" android:selectable="false" android:key="remove_account" android:order="1000" app:allowDividerAbove="true"/>
+</PreferenceScreen>

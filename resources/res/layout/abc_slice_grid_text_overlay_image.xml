@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/tint_overlay" android:background="@drawable/abc_slice_gradient" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="?android:attr/textColorPrimaryInverse" android:gravity="center" android:layout_gravity="bottom" android:id="@+id/text_overlay" android:paddingBottom="@dimen/abc_slice_grid_text_inner_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2"/>
+</FrameLayout>

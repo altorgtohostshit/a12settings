@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:scrollbarStyle="outsideOverlay" android:id="@+id/container_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:padding="24dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/image" android:layout_width="@dimen/accessibility_imageview_size" android:layout_height="@dimen/accessibility_imageview_size" android:layout_marginBottom="@dimen/accessibility_textview_layout_margin_bottom" android:scaleType="fitCenter"/>
+        <TextView android:textAppearance="?android:attr/textAppearanceListItemSecondary" android:textColor="?android:attr/textColorSecondary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/accessibility_textview_layout_margin_bottom" android:text="@string/accessibility_magnification_switch_shortcut_message"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/custom_positive_button" android:text="@string/accessibility_magnification_switch_shortcut_positive_button" style="@style/AccessibilityDialogButton"/>
+            <Button android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/custom_negative_button" android:text="@string/accessibility_magnification_switch_shortcut_negative_button" style="@style/AccessibilityDialogButton"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

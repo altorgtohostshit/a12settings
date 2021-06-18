@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:persistent="false" android:title="@string/one_handed_title">
+    <com.android.settingslib.widget.MainSwitchPreference android:title="@string/one_handed_mode_enabled" android:key="gesture_one_handed_mode_enabled" app:controller="com.android.settings.gestures.OneHandedEnablePreferenceController" app:keywords="@string/keywords_one_handed"/>
+    <com.android.settingslib.widget.LayoutPreference android:persistent="false" android:layout="@layout/one_handed_header" android:selectable="false" android:key="one_handed_header" app:searchable="false" app:allowDividerBelow="false"/>
+    <SwitchPreference android:title="@string/one_handed_app_taps_to_exit" android:key="gesture_app_taps_to_exit" app:controller="com.android.settings.gestures.OneHandedAppTapsExitPreferenceController"/>
+    <ListPreference android:persistent="false" android:entries="@array/one_handed_timeout_title" android:title="@string/one_handed_timeout_title" android:key="gesture_one_handed_timeout" android:entryValues="@array/one_handed_timeout_values" app:controller="com.android.settings.gestures.OneHandedTimeoutPreferenceController"/>
+</PreferenceScreen>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:persistent="false" android:title="@string/accessibility_magnification_service_settings_title" android:key="magnification_mode_screen" app:searchable="false">
+    <Preference android:persistent="false" android:title="@string/accessibility_magnification_mode_title" android:key="magnification_mode" app:controller="com.android.settings.accessibility.MagnificationModePreferenceController" app:searchable="false"/>
+</PreferenceScreen>

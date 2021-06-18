@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/bubbles_app_toggle_title">
+    <com.android.settingslib.widget.MainSwitchPreference android:title="@string/bubbles_main_switch_title" android:key="global_notification_bubbles" app:controller="com.android.settings.notification.BubbleNotificationPreferenceController"/>
+    <com.android.settings.widget.VideoPreference android:persistent="false" android:title="@string/summary_placeholder" android:key="bubbles_illustration" app:animation="@raw/bubble_notification_animation" app:controller="com.android.settings.widget.VideoPreferenceController"/>
+</PreferenceScreen>

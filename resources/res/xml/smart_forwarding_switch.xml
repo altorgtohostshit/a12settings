@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/smart_forwarding_title" android:key="smart_forwarding_preference">
+    <SwitchPreference android:title="Smart forwarding" android:key="smart_forwarding_switch" android:summaryOn="@string/smart_forwarding_summary_enabled" android:summaryOff="@string/smart_forwarding_summary_disabled" android:disableDependentsState="true"/>
+</PreferenceScreen>

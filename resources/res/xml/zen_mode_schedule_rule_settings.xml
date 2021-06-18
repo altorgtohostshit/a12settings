@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/zen_mode_automatic_rule_settings_page_title" android:key="zen_mode_schedule_rule_settings">
+    <com.android.settingslib.widget.LayoutPreference android:layout="@layout/settings_entity_header" android:selectable="false" android:key="pref_app_header" app:allowDividerBelow="true"/>
+    <com.android.settingslib.widget.MainSwitchPreference android:key="zen_automatic_rule_switch"/>
+    <com.android.settingslib.widget.ActionButtonsPreference android:key="zen_action_buttons"/>
+    <Preference android:persistent="false" android:title="@string/zen_mode_schedule_rule_days" android:key="days"/>
+    <SwitchPreference android:title="@string/zen_mode_schedule_alarm_title" android:key="exit_at_alarm" android:summary="@string/zen_mode_schedule_alarm_summary" android:order="99"/>
+    <Preference android:title="@string/zen_mode_custom_behavior_title" android:key="zen_custom_setting" android:order="100"/>
+</PreferenceScreen>

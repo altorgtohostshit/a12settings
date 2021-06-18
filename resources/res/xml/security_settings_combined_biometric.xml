@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/security_settings_biometric_preference_title">
+    <com.android.settingslib.widget.TopIntroPreference android:title="@string/biometric_settings_intro"/>
+    <PreferenceCategory android:title="@string/biometric_settings_category_ways_to_unlock" android:key="biometric_ways_to_unlock">
+        <Preference android:title="@string/security_settings_fingerprint_preference_title" android:key="biometric_fingerprint_settings" android:summary="@string/summary_placeholder" app:controller="com.android.settings.biometrics.combination.BiometricFingerprintStatusPreferenceController" app:keywords="@string/keywords_fingerprint_settings"/>
+        <Preference android:title="@string/security_settings_face_preference_title" android:key="biometric_face_settings" android:summary="@string/summary_placeholder" app:controller="com.android.settings.biometrics.combination.BiometricFaceStatusPreferenceController" app:keywords="@string/keywords_face_settings"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/biometric_settings_category_ways_to_use" android:key="biometric_ways_to_use">
+        <com.android.settingslib.RestrictedSwitchPreference android:title="@string/biometric_settings_use_biometric_unlock_phone" android:key="biometric_settings_biometric_keyguard" app:controller="com.android.settings.biometrics.combination.BiometricSettingsKeyguardPreferenceController" app:keywords="@string/keywords_biometric_unlock"/>
+        <SwitchPreference android:title="@string/biometric_settings_use_biometric_for_apps" android:key="biometric_settings_biometric_app" app:controller="com.android.settings.biometrics.combination.BiometricSettingsAppPreferenceController" app:keywords="@string/keywords_biometric_unlock"/>
+    </PreferenceCategory>
+    <SwitchPreference android:title="@string/lockdown_settings_title" android:key="biometric_setting_lockdown_enabled" android:summary="@string/lockdown_settings_summary" app:controller="com.android.settings.security.LockdownButtonPreferenceController"/>
+</PreferenceScreen>

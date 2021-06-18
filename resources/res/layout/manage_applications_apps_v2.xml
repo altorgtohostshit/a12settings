@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/pinned_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="2dp"/>
+    <FrameLayout android:id="@+id/list_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/apps_list" android:scrollbars="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" app:fastScrollEnabled="true" app:fastScrollHorizontalThumbDrawable="@drawable/thumb_drawable" app:fastScrollHorizontalTrackDrawable="@drawable/line_drawable" app:fastScrollVerticalThumbDrawable="@drawable/thumb_drawable" app:fastScrollVerticalTrackDrawable="@drawable/line_drawable"/>
+        <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:gravity="bottom|center_vertical|center_horizontal|center" android:layout_gravity="center" android:id="@android:id/empty" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/no_applications"/>
+    </FrameLayout>
+    <include layout="@layout/loading_container"/>
+</FrameLayout>

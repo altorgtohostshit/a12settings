@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:key="lock_settings_picker">
+    <com.android.settingslib.RestrictedPreference android:icon="@drawable/ic_lock_none" android:persistent="false" android:title="@string/unlock_set_unlock_off_title" android:key="unlock_set_off"/>
+    <com.android.settingslib.RestrictedPreference android:icon="@drawable/ic_lock_swipe" android:persistent="false" android:title="@string/unlock_set_unlock_none_title" android:key="unlock_set_none"/>
+    <com.android.settingslib.RestrictedPreference android:icon="@drawable/ic_pattern" android:persistent="false" android:title="@string/unlock_set_unlock_pattern_title" android:key="unlock_set_pattern"/>
+    <com.android.settingslib.RestrictedPreference android:icon="@drawable/ic_lock_pin" android:persistent="false" android:title="@string/unlock_set_unlock_pin_title" android:key="unlock_set_pin"/>
+    <com.android.settingslib.RestrictedPreference android:icon="@drawable/ic_password" android:persistent="false" android:title="@string/unlock_set_unlock_password_title" android:key="unlock_set_password"/>
+    <com.android.settingslib.RestrictedPreference android:persistent="false" android:key="unlock_set_managed"/>
+    <com.android.settingslib.RestrictedPreference android:persistent="false" android:title="@string/fingerprint_unlock_skip_fingerprint" android:key="unlock_skip_fingerprint"/>
+    <com.android.settingslib.RestrictedPreference android:persistent="false" android:title="@string/face_unlock_skip_face" android:key="unlock_skip_face"/>
+    <com.android.settingslib.RestrictedPreference android:persistent="false" android:title="@string/biometrics_unlock_skip_biometrics" android:key="unlock_skip_biometrics"/>
+    <com.android.settingslib.widget.FooterPreference android:selectable="false" android:key="lock_settings_footer" app:searchable="false"/>
+</PreferenceScreen>

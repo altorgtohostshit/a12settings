@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/nfc_quick_toggle_title">
+    <com.android.settingslib.widget.MainSwitchPreference android:title="@string/nfc_main_switch_title" android:key="toggle_nfc" app:controller="com.android.settings.nfc.NfcPreferenceController"/>
+    <com.android.settingslib.widget.LayoutPreference android:layout="@layout/nfc_detection_point" android:selectable="false" android:key="nfc_detection_point" app:controller="com.android.settings.nfc.NfcDetectionPointController"/>
+    <SwitchPreference android:title="@string/nfc_secure_settings_title" android:key="nfc_secure_settings" android:summary="@string/nfc_secure_toggle_summary" app:controller="com.android.settings.nfc.SecureNfcPreferenceController"/>
+    <Preference android:title="@string/nfc_payment_settings_title" android:key="default_payment_app" android:fragment="com.android.settings.nfc.PaymentSettings" app:controller="com.android.settings.applications.specialaccess.DefaultPaymentSettingsPreferenceController" app:keywords="@string/keywords_default_payment_app"/>
+</PreferenceScreen>

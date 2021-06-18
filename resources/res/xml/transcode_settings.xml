@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/transcode_settings_title" app:searchable="false">
+    <SwitchPreference android:title="@string/transcode_user_control" android:key="transcode_user_control" app:controller="com.android.settings.development.transcode.TranscodeUserControlPreferenceController"/>
+    <SwitchPreference android:title="@string/transcode_enable_all" android:key="transcode_enable_all" app:controller="com.android.settings.development.transcode.TranscodeGlobalTogglePreferenceController"/>
+    <SwitchPreference android:title="@string/transcode_default" android:key="transcode_default" app:controller="com.android.settings.development.transcode.TranscodeDefaultOptionPreferenceController"/>
+    <SwitchPreference android:title="@string/transcode_notification" android:key="transcode_notification" app:controller="com.android.settings.development.transcode.TranscodeNotificationPreferenceController"/>
+    <SwitchPreference android:title="@string/transcode_disable_cache" android:key="transcode_disable_cache" app:controller="com.android.settings.development.transcode.TranscodeDisableCachePreferenceController"/>
+</PreferenceScreen>

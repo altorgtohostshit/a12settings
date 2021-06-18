@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/onboarding" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_width="80dp" android:layout_height="80dp" android:layout_marginTop="143dp" android:src="@drawable/ic_promote_conversation"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="?android:attr/textColorSecondary" android:gravity="center" android:layout_width="316dp" android:layout_height="wrap_content" android:layout_marginTop="47dp" android:text="@string/conversation_onboarding_title"/>
+    <TextView android:gravity="center" android:layout_width="316dp" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="@string/conversation_onboarding_summary"/>
+</LinearLayout>

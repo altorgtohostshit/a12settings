@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/nfc_payment_settings_title">
+    <com.android.settings.nfc.NfcPaymentPreference android:title="@string/nfc_payment_default" android:key="nfc_payment" android:widgetLayout="@layout/preference_widget_gear" android:dialogTitle="@string/nfc_payment_pay_with" app:controller="com.android.settings.nfc.NfcPaymentPreferenceController"/>
+    <DropDownPreference android:title="@string/nfc_payment_use_default" android:key="nfc_foreground" app:controller="com.android.settings.nfc.NfcForegroundPreferenceController"/>
+</PreferenceScreen>

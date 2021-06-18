@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/configure_notification_settings">
+    <PreferenceCategory android:title="@string/conversation_notifs_category" android:key="conversation_category">
+        <Preference android:title="@string/conversations_category_title" android:key="conversations" android:summary=" " android:order="1" android:fragment="com.android.settings.notification.app.ConversationListSettings" app:controller="com.android.settings.notification.ConversationListSummaryPreferenceController"/>
+        <Preference android:title="@string/notification_bubbles_title" android:key="notification_bubbles" android:summary="@string/notifications_bubble_setting_on_summary" android:order="2" android:fragment="com.android.settings.notification.BubbleNotificationSettings" app:controller="com.android.settings.notification.BubbleSummaryNotificationPreferenceController"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/recent_notifications" android:key="recent_notifications_category">
+        <com.android.settings.widget.PrimarySwitchPreference android:title=" " android:key="app1" android:summary=" " android:order="5"/>
+        <com.android.settings.widget.PrimarySwitchPreference android:title=" " android:key="app2" android:summary=" " android:order="6"/>
+        <com.android.settings.widget.PrimarySwitchPreference android:title=" " android:key="app3" android:summary=" " android:order="7"/>
+        <Preference android:title="@string/notifications_title" android:key="all_notifications" android:order="10" android:fragment="com.android.settings.applications.manageapplications.ManageApplications" app:searchable="false">
+            <extra android:name="classname" android:value="com.android.settings.Settings$NotificationAppListActivity"/>
+        </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/lock_screen_notifications_title" android:key="configure_notifications_lock">
+        <Preference android:title="@string/notification_history" android:key="notification_history" android:summary="@string/notification_history_summary" android:order="11">
+            <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.notification.history.NotificationHistoryActivity"/>
+        </Preference>
+        <Preference android:title="@string/manage_notification_access_title" android:key="notification_access" android:summary="@string/manage_notification_access_summary" android:order="12" android:fragment="com.android.settings.notification.NotificationAccessSettings" app:controller="com.android.settings.applications.specialaccess.notificationaccess.NotificationAccessController"/>
+        <com.android.settings.RestrictedListPreference android:title="@string/lock_screen_notifs_title" android:key="lock_screen_notifications" android:summary="@string/summary_placeholder" android:order="13" android:singleLineTitle="false"/>
+        <com.android.settingslib.RestrictedSwitchPreference android:title="@string/lock_screen_notifs_redact" android:key="lock_screen_redact" android:summary="@string/lock_screen_notifs_redact_summary" android:order="14" app:controller="com.android.settings.notification.RedactNotificationPreferenceController"/>
+        <com.android.settingslib.RestrictedSwitchPreference android:title="@string/lock_screen_notifs_redact_work" android:key="lock_screen_work_redact" android:summary="@string/lock_screen_notifs_redact_work_summary" android:order="15" app:controller="com.android.settings.notification.RedactNotificationPreferenceController"/>
+        <SwitchPreference android:title="@string/lockscreen_bypass_title" android:key="notification_lockscreen_bypass" android:summary="@string/lockscreen_bypass_summary" android:order="16" app:controller="com.android.settings.biometrics.face.FaceSettingsLockscreenBypassPreferenceController" app:searchable="false"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/advanced_section_header" android:key="advanced_section_header">
+        <com.android.settingslib.RestrictedPreference android:title="@string/zen_mode_settings_title" android:key="zen_mode_notifications" android:order="17" android:fragment="com.android.settings.notification.zen.ZenModeSettings" app:controller="com.android.settings.notification.zen.ZenModePreferenceController" app:useAdminDisabledSummary="true"/>
+        <com.android.settingslib.RestrictedPreference android:title="@string/cell_broadcast_settings" android:key="app_and_notif_cell_broadcast_settings" android:order="18" app:useAdminDisabledSummary="true">
+            <intent android:targetPackage="@string/config_cell_broadcast_receiver_package" android:action="android.intent.action.MAIN" android:targetClass="com.android.cellbroadcastreceiver.CellBroadcastSettings"/>
+        </com.android.settingslib.RestrictedPreference>
+        <SwitchPreference android:title="@string/silent_notifications_status_bar" android:key="silent_icons" android:order="19" app:controller="com.android.settings.notification.SilentStatusBarPreferenceController"/>
+        <SwitchPreference android:title="@string/snooze_options_title" android:key="show_snooze_options" android:order="20" app:controller="com.android.settings.notification.SnoozeNotificationPreferenceController"/>
+        <SwitchPreference android:title="@string/notification_badging_title" android:key="notification_badging" android:order="21" app:controller="com.android.settings.notification.BadgingNotificationPreferenceController"/>
+        <SwitchPreference android:title="@string/notification_pulse_title" android:key="notification_pulse" android:order="22" app:controller="com.android.settings.notification.PulseNotificationPreferenceController"/>
+        <SwitchPreference android:title="@string/notification_assistant_title" android:key="notification_assistant" android:summary="@string/notification_assistant_summary" android:order="23"/>
+    </PreferenceCategory>
+</PreferenceScreen>

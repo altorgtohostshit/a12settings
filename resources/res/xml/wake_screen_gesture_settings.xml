@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/ambient_display_wake_screen_title">
+    <com.android.settings.widget.VideoPreference android:key="gesture_wake_screen_video" app:animation="@raw/gesture_ambient_wake_screen" app:preview="@drawable/gesture_ambient_wake_screen"/>
+    <SwitchPreference android:title="@string/ambient_display_wake_screen_title" android:key="gesture_wake_screen" android:summary="@string/ambient_display_wake_screen_summary" app:controller="com.google.android.settings.aware.WakeScreenGesturePreferenceController" app:allowDividerAbove="true" app:keywords="@string/keywords_wake_display"/>
+    <com.android.settingslib.widget.FooterPreference android:title="@string/ambient_display_wake_screen_footer" android:selectable="false" android:key="wake_screen_gesture_footer" app:controller="com.google.android.settings.aware.SkipGestureFooterPreferenceController" app:searchable="false"/>
+</PreferenceScreen>

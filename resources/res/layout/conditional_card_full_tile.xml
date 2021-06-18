@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ContextualCardStyle">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/content" android:background="?android:attr/selectableItemBackground" android:paddingTop="@dimen/contextual_condition_full_card_padding_top" android:paddingBottom="@dimen/contextual_condition_full_card_padding_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/contextual_card_icon_padding_start" android:paddingEnd="@dimen/contextual_full_card_padding_end">
+            <ImageView android:id="@android:id/icon" android:layout_width="@dimen/contextual_card_icon_size" android:layout_height="@dimen/contextual_card_icon_size" android:tint="?android:attr/colorAccent"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:paddingStart="@dimen/contextual_condition_full_card_padding_start" android:paddingEnd="@dimen/contextual_condition_full_card_padding_end">
+                <TextView android:textAppearance="@style/TextAppearance.HomepageCardTitle" android:id="@android:id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/contextual_condition_card_title_margin_bottom"/>
+                <TextView android:textAppearance="@style/TextAppearance.ConditionCardSummary" android:id="@android:id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_marginEnd="12dp">
+            <include layout="@layout/horizontal_divider"/>
+        </FrameLayout>
+        <Button android:id="@+id/first_action" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ConditionFullCardBorderlessButton"/>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

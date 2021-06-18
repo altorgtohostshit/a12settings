@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/security_settings_title" android:key="security_hub_dashboard_page">
+    <com.android.settings.widget.GearPreference android:title="@string/unlock_set_unlock_launch_picker_title" android:key="unlock_set_or_change" android:summary="@string/summary_placeholder" app:keywords="@string/keywords_lockscreen"/>
+    <Preference android:title="@string/security_settings_fingerprint_preference_title" android:key="fingerprint_settings" android:summary="@string/summary_placeholder" app:controller="com.google.android.settings.security.FingerprintStatusGooglePreferenceController" app:keywords="@string/keywords_fingerprint_settings"/>
+    <Preference android:title="@string/security_settings_face_preference_title" android:key="face_settings" android:summary="@string/summary_placeholder" app:controller="com.google.android.settings.security.FaceStatusGooglePreferenceController" app:keywords="@string/keywords_face_settings"/>
+</PreferenceScreen>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/reverse_charging_title">
+    <com.android.settings.widget.VideoPreference android:title="@string/summary_placeholder" android:key="auto_reverse_charging_bottom_sheet" app:animation="@raw/auto_reverse_charging_bottom_sheet" app:preview="@drawable/auto_reverse_charging_bottom_sheet" app:searchable="false"/>
+</PreferenceScreen>

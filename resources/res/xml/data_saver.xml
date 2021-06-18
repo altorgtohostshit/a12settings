@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/data_saver_title">
+    <Preference android:title="@string/unrestricted_data_saver" android:key="unrestricted_access" android:summary="@string/summary_two_lines_placeholder" android:fragment="com.android.settings.datausage.UnrestrictedDataAccess" app:controller="com.android.settings.applications.specialaccess.DataSaverController" app:searchable="false"/>
+    <com.android.settingslib.widget.FooterPreference android:title="@android:string/permdesc_masterClear" android:selectable="false" android:key="data_saver_footer" app:searchable="false"/>
+</PreferenceScreen>

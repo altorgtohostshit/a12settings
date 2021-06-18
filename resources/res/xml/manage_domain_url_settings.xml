@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/domain_urls_title" android:key="manage_domain_url_screen">
+    <PreferenceCategory android:title="@string/web_action_section_title" android:key="web_action_category" app:controller="com.android.settings.applications.managedomainurls.WebActionCategoryController">
+        <SwitchPreference android:title="@string/web_action_enable_title" android:key="instant_app_web_action_toggle" android:summary="@string/web_action_enable_summary" app:controller="com.android.settings.applications.managedomainurls.InstantAppWebActionPreferenceController"/>
+        <Preference android:title="@string/instant_apps_settings" android:key="instant_app_web_action_pref" app:controller="com.android.settings.applications.managedomainurls.InstantAppAccountPreferenceController"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/domain_url_section_title" android:key="installed_apps_web_action" app:controller="com.android.settings.applications.managedomainurls.DomainAppPreferenceController"/>
+</PreferenceScreen>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="GlifTheme.DayNight">
+    </style>
+    <style name="GlifV2Theme.DayNight">
+    </style>
+    <style name="GlifV2Theme.DayNight.Transparent">
+    </style>
+    <style name="GlifV3Theme.DayNight">
+    </style>
+    <style name="GlifV3Theme.DayNight.NoActionBar">
+    </style>
+    <style name="GlifV3Theme.DayNight.Transparent">
+    </style>
+    <style name="SetupWizardTheme.DayNight.Transparent">
+    </style>
+    <style name="SubSettings.SetupWizard">
+    </style>
+    <style name="SudDynamicColorThemeGlifV3.DayNight">
+    </style>
+    <style name="SudFullDynamicColorThemeGlifV3.DayNight">
+    </style>
+    <style name="SudThemeGlif.DayNight">
+    </style>
+    <style name="SudThemeGlifV2.DayNight">
+    </style>
+    <style name="SudThemeGlifV3.DayNight">
+    </style>
+    <style name="SudThemeMaterial.DayNight">
+    </style>
+    <style name="SuggestionCardIconStyle">
+        <item name="android:tint">?android:attr/textColorSecondaryInverse</item>
+    </style>
+    <style name="SuggestionCardSummaryColor">
+        <item name="android:textColor">?android:attr/textColorSecondaryInverse</item>
+    </style>
+    <style name="SuggestionCardTitleColor">
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+    </style>
+    <style name="SuwAlertDialogThemeCompat.DayNight">
+    </style>
+    <style name="Theme.AlertDialog.Base">
+        <item name="android:colorBackground">@color/dialog_background</item>
+        <item name="colorAccent">@android:color/Pink_800</item>
+    </style>
+    <style name="Theme.AppCompat.DayNight">
+    </style>
+    <style name="Theme.AppCompat.DayNight.DarkActionBar">
+    </style>
+    <style name="Theme.AppCompat.DayNight.Dialog">
+    </style>
+    <style name="Theme.AppCompat.DayNight.Dialog.Alert">
+    </style>
+    <style name="Theme.AppCompat.DayNight.Dialog.MinWidth">
+    </style>
+    <style name="Theme.AppCompat.DayNight.DialogWhenLarge">
+    </style>
+    <style name="Theme.AppCompat.DayNight.NoActionBar">
+    </style>
+    <style name="Theme.CollapsingToolbar.Settings">
+        <item name="colorAccent">@android:color/Pink_800</item>
+        <item name="colorPrimary">?unknown_ref: 106022c</item>
+        <item name="elevationOverlayColor">?attr/colorPrimary</item>
+        <item name="elevationOverlayEnabled">true</item>
+    </style>
+    <style name="Theme.MaterialComponents.DayNight">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.BottomSheetDialog">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.DarkActionBar">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.DarkActionBar.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Alert">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Alert.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.FixedSize">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.FixedSize.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.MinWidth">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.MinWidth.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.DialogWhenLarge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+    </style>
+    <style name="Theme.Settings.Home">
+        <item name="android:colorBackground">?android:attr/colorPrimaryDark</item>
+        <item name="colorPrimary">?unknown_ref: 1060235</item>
+        <item name="colorPrimaryDark">?unknown_ref: 106022c</item>
+    </style>
+    <style name="Theme.TabTheme">
+        <item name="colorPrimary">?unknown_ref: 10601a7</item>
+    </style>
+    <style name="ThemeOverlay.AppCompat.DayNight">
+    </style>
+    <style name="ThemeOverlay.SwitchBar.Settings">
+        <item name="android:textColorPrimaryInverse">@android:color/black</item>
+    </style>
+    <style name="Widget.ActionBar.Base">
+        <item name="android:background">?android:attr/colorPrimaryDark</item>
+    </style>
+    <style name="Widget.MaterialComponents.ActionBar.PrimarySurface">
+    </style>
+    <style name="Widget.MaterialComponents.AppBarLayout.PrimarySurface">
+    </style>
+    <style name="Widget.MaterialComponents.BottomAppBar.PrimarySurface">
+    </style>
+    <style name="Widget.MaterialComponents.BottomNavigationView.PrimarySurface">
+    </style>
+    <style name="Widget.MaterialComponents.NavigationRailView.PrimarySurface">
+    </style>
+    <style name="Widget.MaterialComponents.TabLayout.PrimarySurface">
+    </style>
+    <style name="Widget.MaterialComponents.Toolbar.PrimarySurface">
+    </style>
+</resources>

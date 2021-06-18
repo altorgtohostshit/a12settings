@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/smart_forwarding_input_mdn_title" android:key="network_and_internet_screen">
+    <EditTextPreference android:persistent="false" android:title="SIM 1" android:key="slot0_phone_number" android:dialogTitle="@string/smart_forwarding_input_mdn_dialog_title"/>
+    <EditTextPreference android:persistent="false" android:title="SIM 2" android:key="slot1_phone_number" android:dialogTitle="@string/smart_forwarding_input_mdn_dialog_title"/>
+</PreferenceScreen>

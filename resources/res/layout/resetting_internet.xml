@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/description_margin_top" android:layout_marginBottom="@dimen/description_margin_top" android:layout_marginStart="@dimen/content_margin_left" android:layout_marginEnd="@dimen/content_margin_left">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/reset_internet_ring_progress_right_margin" style="?android:attr/progressBarStyleSmallTitle"/>
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/resetting_internet_text"/>
+    </LinearLayout>
+</LinearLayout>

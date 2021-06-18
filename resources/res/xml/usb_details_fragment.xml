@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/usb_preference" android:key="usb_details_fragment">
+    <com.android.settingslib.widget.LayoutPreference android:layout="@layout/settings_entity_header" android:selectable="false" android:key="usb_device_header"/>
+    <PreferenceCategory android:title="@string/usb_control_title" android:key="usb_details_data_role"/>
+    <PreferenceCategory android:title="@string/usb_use" android:key="usb_details_functions"/>
+    <PreferenceCategory android:title="@string/usb_file_transfer_title" android:key="usb_transcode_mtp"/>
+    <PreferenceCategory android:title="@string/usb_power_title" android:key="usb_details_power_role"/>
+</PreferenceScreen>

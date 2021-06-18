@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/captioning_more_options_title">
+    <com.android.settings.accessibility.LocalePreference android:title="@string/captioning_locale" android:key="captioning_locale" android:summary="%s"/>
+    <com.android.settings.accessibility.AccessibilityFooterPreference android:persistent="false" android:title="@string/accessibility_caption_preference_summary" android:selectable="false" android:key="captioning_more_options_footer" app:controller="com.android.settings.accessibility.CaptionFooterPreferenceController" app:searchable="false"/>
+</PreferenceScreen>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.setupdesign.GlifLayout xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:icon="@drawable/ic_face_header" android:id="@+id/face_enroll_participation" android:layout_width="match_parent" android:layout_height="match_parent" app:sucHeaderText="@string/face_enrolling_participation_title">
+    <LinearLayout android:orientation="vertical" android:paddingTop="100dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/SudContentFrame">
+        <TextView android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/face_enrolling_participation_description" android:lineSpacingExtra="5dp" style="@android:style/Preference.DeviceDefault.Information"/>
+        <Space android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+        <LinearLayout android:gravity="left" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/SudContentFrame">
+            <CheckBox android:id="@+id/agree_to_participate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/face_consent" style="@android:style/Preference.DeviceDefault.Information"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.setupdesign.GlifLayout>

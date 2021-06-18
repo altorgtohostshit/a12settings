@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/emergency_gesture_screen_title">
+    <com.android.settingslib.widget.MainSwitchPreference android:key="gesture_emergency_button_switch_bar" app:controller="com.android.settings.emergency.EmergencyGesturePreferenceController"/>
+    <com.android.settingslib.widget.TopIntroPreference android:title="@string/emergency_gesture_screen_summary" app:allowDividerAbove="false"/>
+    <SwitchPreference android:icon="@drawable/ic_hearing" android:title="@string/emergency_gesture_sound_setting_title" android:key="emergency_gesture_sound" android:summary="@string/emergency_gesture_sound_setting_summary" app:controller="com.android.settings.emergency.EmergencyGestureSoundPreferenceController" app:keywords="@string/keywords_gesture"/>
+    <PreferenceCategory android:title="@string/emergency_gesture_category_call_for_help_title" android:key="emergency_gesture_notify_for_help">
+        <com.android.settings.emergency.EmergencyGestureNumberOverridePreference android:icon="@drawable/ic_call_grey_24dp" android:title="@string/emergency_gesture_call_for_help_title" android:key="emregency_gesture_number_override" android:summary="@string/summary_placeholder" android:dialogTitle="@string/emergency_gesture_call_for_help_dialog_title" android:positiveButtonText="@string/save" android:dialogLayout="@layout/emergency_gesture_number_override_dialog" app:controller="com.android.settings.emergency.EmergencyGestureNumberOverridePreferenceController"/>
+    </PreferenceCategory>
+</PreferenceScreen>

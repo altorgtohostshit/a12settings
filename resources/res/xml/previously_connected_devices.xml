@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/connected_device_previously_connected_screen_title">
+    <PreferenceCategory android:key="saved_device_list" app:controller="com.android.settings.connecteddevice.SavedDeviceGroupController"/>
+</PreferenceScreen>

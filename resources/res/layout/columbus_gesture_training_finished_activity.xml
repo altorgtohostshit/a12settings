@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.setupdesign.GlifLayout xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:icon="@drawable/ic_assist_gesture_checked" android:id="@+id/layout" android:layout_width="match_parent" android:layout_height="match_parent" app:sucHeaderText="@string/columbus_gesture_training_finished_title">
+    <com.google.android.setupdesign.view.Illustration android:layout_gravity="center" android:id="@+id/columbus_gesture_illustration" android:background="@drawable/gesture_columbus" android:layout_width="@dimen/assist_illustration_layout_width" android:layout_height="@dimen/assist_illustration_layout_height" style="@style/SudContentIllustration"/>
+</com.google.android.setupdesign.GlifLayout>

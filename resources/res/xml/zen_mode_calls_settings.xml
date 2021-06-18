@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/zen_mode_calls_title" android:key="zen_mode_calls_settings_page" app:searchable="false">
+    <PreferenceCategory android:title="@string/zen_mode_calls_header" android:key="zen_mode_settings_category_calls" app:allowDividerBelow="true">
+        <com.android.settingslib.widget.LayoutPreference android:layout="@layout/zen_mode_senders_image" android:selectable="false" android:key="zen_mode_calls_image"/>
+    </PreferenceCategory>
+    <SwitchPreference android:title="@string/zen_mode_repeat_callers_title" android:key="zen_mode_repeat_callers" app:allowDividerAbove="true"/>
+    <com.android.settingslib.widget.FooterPreference/>
+</PreferenceScreen>

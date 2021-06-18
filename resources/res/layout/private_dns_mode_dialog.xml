@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioGroup android:id="@+id/private_dns_radio_group" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/developer_option_dialog_margin_start">
+            <include android:id="@+id/private_dns_mode_off" layout="@layout/preference_widget_dialog_radiobutton"/>
+            <include android:id="@+id/private_dns_mode_opportunistic" layout="@layout/preference_widget_dialog_radiobutton"/>
+            <include android:id="@+id/private_dns_mode_provider" layout="@layout/preference_widget_dialog_radiobutton"/>
+            <EditText android:id="@+id/private_dns_mode_provider_hostname" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/developer_option_dialog_min_height" android:hint="@string/private_dns_mode_provider_hostname_hint" android:inputType="textFilter" android:imeOptions="actionDone" android:layout_marginStart="3dp" android:layout_marginEnd="8dp" style="@style/Widget.CompoundButton.RadioButton"/>
+        </RadioGroup>
+        <include android:id="@+id/private_dns_help_info" layout="@layout/preference_widget_dialog_summary"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:left="@dimen/settingslib_switch_thumb_margin" android:top="@dimen/settingslib_switch_thumb_margin" android:right="@dimen/settingslib_switch_thumb_margin" android:bottom="@dimen/settingslib_switch_thumb_margin">
+        <shape android:shape="oval">
+            <size android:height="@dimen/settingslib_switch_thumb_size" android:width="@dimen/settingslib_switch_thumb_size"/>
+            <solid android:color="@color/settingslib_state_on_color"/>
+        </shape>
+    </item>
+</layer-list>

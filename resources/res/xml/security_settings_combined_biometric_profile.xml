@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/security_settings_biometric_preference_title">
+    <com.android.settingslib.widget.TopIntroPreference android:title="@string/biometric_settings_intro"/>
+    <PreferenceCategory android:title="@string/biometric_settings_category_ways_to_unlock" android:key="biometric_ways_to_unlock">
+        <Preference android:title="@string/security_settings_fingerprint_preference_title" android:key="biometric_fingerprint_settings_profile" android:summary="@string/summary_placeholder" app:controller="com.android.settings.biometrics.combination.BiometricFingerprintProfileStatusPreferenceController" app:keywords="@string/keywords_fingerprint_settings"/>
+        <Preference android:title="@string/security_settings_face_preference_title" android:key="biometric_face_settings_profile" android:summary="@string/summary_placeholder" app:controller="com.android.settings.biometrics.combination.BiometricFaceProfileStatusPreferenceController" app:keywords="@string/keywords_face_settings"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/biometric_settings_category_ways_to_use" android:key="biometric_ways_to_use">
+        <SwitchPreference android:title="@string/biometric_settings_use_biometric_for_apps" android:key="biometric_settings_biometric_app_profile" app:controller="com.android.settings.biometrics.combination.BiometricSettingsAppPreferenceController" app:keywords="@string/keywords_biometric_unlock"/>
+    </PreferenceCategory>
+</PreferenceScreen>

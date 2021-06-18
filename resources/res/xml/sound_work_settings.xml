@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/sound_work_settings">
+    <SwitchPreference android:title="@string/work_use_personal_sounds_title" android:key="work_use_personal_sounds" android:summary="@string/work_use_personal_sounds_summary" android:disableDependentsState="true"/>
+    <com.android.settings.DefaultRingtonePreference android:title="@string/work_ringtone_title" android:key="work_ringtone" android:dependency="work_use_personal_sounds" android:dialogTitle="@string/work_alarm_ringtone_title" android:ringtoneType="ringtone"/>
+    <com.android.settings.DefaultRingtonePreference android:title="@string/work_notification_ringtone_title" android:key="work_notification_ringtone" android:dependency="work_use_personal_sounds" android:dialogTitle="@string/work_alarm_ringtone_title" android:ringtoneType="notification"/>
+    <com.android.settings.DefaultRingtonePreference android:persistent="false" android:title="@string/work_alarm_ringtone_title" android:key="work_alarm_ringtone" android:dependency="work_use_personal_sounds" android:dialogTitle="@string/work_alarm_ringtone_title" android:ringtoneType="alarm"/>
+</PreferenceScreen>

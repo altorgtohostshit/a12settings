@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectAnimator xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:interpolator="@drawable/$$sud_fourcolor_progress_bar__2__0" android:duration="1983" android:repeatCount="infinite" android:valueFrom="0" android:valueTo="1" android:valueType="floatType" android:propertyName="trimPathEnd"/>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/location_settings_title" android:key="location_settings" app:keywords="@string/keywords_location">
+    <PreferenceCategory android:title="@string/location_category_recent_location_access" android:key="recent_location_access" app:controller="com.android.settings.location.RecentLocationAccessPreferenceController"/>
+    <Preference android:icon="@drawable/ic_chevron_right_24dp" android:title="@string/location_recent_location_access_see_all" android:key="recent_location_access_see_all_button" android:fragment="com.android.settings.location.RecentLocationAccessSeeAllFragment" app:controller="com.android.settings.location.RecentLocationAccessSeeAllButtonPreferenceController" app:searchable="false"/>
+    <PreferenceCategory android:layout="@layout/preference_category_no_label" android:key="location_advanced_settings" app:initialExpandedChildrenCount="3">
+        <com.android.settingslib.RestrictedSwitchPreference android:enabled="false" android:title="@string/managed_profile_location_switch_title" android:selectable="true" android:key="managed_profile_location_switch" app:controller="com.android.settings.location.LocationForWorkPreferenceController" app:useAdminDisabledSummary="true" app:forWork="true"/>
+        <Preference android:title="@string/location_app_level_permissions" android:key="app_level_permissions" app:controller="com.android.settings.location.AppLocationPermissionPreferenceController">
+            <intent android:action="android.intent.action.MANAGE_PERMISSION_APPS">
+                <extra android:name="android.intent.extra.PERMISSION_NAME" android:value="android.permission-group.LOCATION"/>
+            </intent>
+        </Preference>
+        <Preference android:title="@string/location_services_preference_title" android:key="location_services" android:fragment="com.android.settings.location.LocationServices" app:controller="com.android.settings.location.LocationServicesPreferenceController"/>
+    </PreferenceCategory>
+    <com.android.settingslib.widget.FooterPreference android:title="@string/location_settings_footer_location_on" android:selectable="false" android:key="location_footer" app:controller="com.android.settings.location.LocationSettingsFooterPreferenceController"/>
+</PreferenceScreen>

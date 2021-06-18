@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item>
+        <shape android:shape="oval">
+            <corners android:radius="@dimen/hats_lib_close_ripple_radius"/>
+            <solid android:color="@color/hats_lib_survey_white_shape_color"/>
+        </shape>
+    </item>
+    <item>
+        <ripple android:color="@color/hats_lib_survey_white_ripple_color"/>
+    </item>
+</layer-list>

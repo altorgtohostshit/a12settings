@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item>
+        <com.android.settingslib.widget.AdaptiveIconShapeDrawable android:height="@dimen/accessibility_icon_size" android:width="@dimen/accessibility_icon_size" android:color="@color/accessibility_feature_background"/>
+    </item>
+    <item android:gravity="center">
+        <vector android:height="@dimen/accessibility_icon_foreground_size" android:width="@dimen/accessibility_icon_foreground_size" android:viewportWidth="24" android:viewportHeight="24">
+            <path android:fillColor="#ffffff" android:pathData="M7,18h2L9,6L7,6v12zM11,22h2L13,2h-2v20zM3,14h2v-4L3,10v4zM15,18h2L17,6h-2v12zM19,10v4h2v-4h-2z"/>
+        </vector>
+    </item>
+</layer-list>

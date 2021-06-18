@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/dark_ui_mode" app:keywords="@string/keywords_dark_ui_mode">
+    <com.android.settingslib.widget.MainSwitchPreference android:title="@string/dark_theme_main_switch_title" android:key="dark_ui_activated" app:controller="com.android.settings.display.darkmode.DarkModeActivationPreferenceController"/>
+    <com.android.settingslib.widget.BannerMessagePreference android:title="@string/twilight_mode_location_off_dialog_message" android:key="dark_ui_location_off" app:controller="com.android.settings.display.TwilightLocationPreferenceController"/>
+    <com.android.settingslib.widget.TopIntroPreference android:title="@string/dark_ui_text" android:key="dark_ui_top_intro" app:searchable="false"/>
+    <DropDownPreference android:entries="@array/dark_ui_scheduler_preference_titles" android:title="@string/dark_ui_auto_mode_title" android:key="dark_ui_auto_mode" android:summary="%s" android:entryValues="@array/dark_ui_scheduler_preference_titles" app:controller="com.android.settings.display.darkmode.DarkModeScheduleSelectorController" app:allowDividerAbove="true" app:keywords="@string/keywords_dark_ui_mode"/>
+    <Preference android:title="@string/night_display_start_time_title" android:key="dark_theme_start_time" app:searchable="false"/>
+    <Preference android:title="@string/night_display_end_time_title" android:key="dark_theme_end_time" app:searchable="false"/>
+</PreferenceScreen>

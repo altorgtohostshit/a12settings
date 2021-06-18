@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:background="?android:attr/colorBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:layout_gravity="center" android:id="@+id/protection_layer" android:background="@drawable/protection_background" android:padding="@dimen/settingslib_illustration_padding" android:layout_width="412dp" android:layout_height="300dp"/>
+    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@+id/lottie_view" android:padding="@dimen/settingslib_illustration_padding" android:layout_width="412dp" android:layout_height="300dp" android:importantForAccessibility="no"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/video_play_button" android:visibility="gone" android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/ic_gesture_play_button"/>
+</FrameLayout>

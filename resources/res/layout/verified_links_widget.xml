@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:contentDescription="@string/app_launch_verified_links_info_description">
+    <include android:id="@+id/verified_links_widget" layout="@layout/preference_widget_info"/>
+</LinearLayout>

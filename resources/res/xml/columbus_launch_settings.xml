@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/columbus_launch_settings_activity_title" android:key="columbus_launch_settings_page">
+    <com.android.settingslib.widget.LayoutPreference android:layout="@layout/columbus_settings_launch_app" android:key="columbus_launch_app"/>
+</PreferenceScreen>

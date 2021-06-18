@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" android:textDirection="locale" android:layoutDirection="locale">
+    <LinearLayout android:orientation="vertical" android:clipChildren="true" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.android.settings.localepicker.LocaleRecyclerView android:id="@+id/dragList" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <Button android:textAppearance="?android:attr/textAppearanceListItem" android:id="@+id/add_language" android:layout_width="match_parent" android:layout_height="?android:attr/listPreferredItemHeight" android:text="@string/add_a_language" android:drawablePadding="32dp" android:drawableStart="@drawable/ic_add_24dp" android:textAlignment="textStart" android:paddingStart="?android:attr/listPreferredItemPaddingStart" android:paddingEnd="?android:attr/listPreferredItemPaddingEnd" style="@style/Base.Widget.AppCompat.Button.Borderless"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

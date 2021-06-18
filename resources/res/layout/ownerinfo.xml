@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="20dp" android:paddingEnd="20dp">
+    <EditText android:gravity="top" android:id="@+id/owner_info_edit_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/min_tap_target_size" android:hint="@string/owner_info_settings_edit_text_hint" android:inputType="none|text|textCapSentences|textMultiLine">
+        <requestFocus/>
+    </EditText>
+</LinearLayout>

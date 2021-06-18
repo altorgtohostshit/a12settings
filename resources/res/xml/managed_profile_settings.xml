@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/managed_profile_settings_title" android:key="managed_profile_settings_screen">
+    <SwitchPreference android:title="@string/work_mode_label" android:key="work_mode" android:summary="@string/summary_placeholder" app:controller="com.android.settings.accounts.WorkModePreferenceController"/>
+    <com.android.settingslib.RestrictedSwitchPreference android:title="@string/managed_profile_contact_search_title" android:key="contacts_search" android:summary="@string/managed_profile_contact_search_summary" app:controller="com.android.settings.accounts.ContactSearchPreferenceController" app:useAdditionalSummary="true"/>
+    <SwitchPreference android:title="@string/cross_profile_calendar_title" android:key="cross_profile_calendar" android:summary="@string/cross_profile_calendar_summary" app:controller="com.android.settings.accounts.CrossProfileCalendarPreferenceController"/>
+</PreferenceScreen>

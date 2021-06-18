@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/zen_mode_custom_behavior_title" android:key="zen_custom_rule_settings_page">
+    <PreferenceCategory android:key="zen_custom_rule_category">
+        <com.android.settingslib.widget.RadioButtonPreference android:title="@string/zen_mode_custom_behavior_summary_default" android:key="zen_custom_rule_setting_default"/>
+        <com.android.settingslib.widget.RadioButtonPreference android:title="@string/zen_mode_custom_behavior_summary" android:key="zen_custom_rule_setting"/>
+    </PreferenceCategory>
+</PreferenceScreen>

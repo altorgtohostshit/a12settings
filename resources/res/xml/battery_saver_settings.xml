@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/battery_saver" app:keywords="@string/keywords_battery_saver">
+    <com.android.settingslib.widget.MainSwitchPreference android:key="battery_saver" android:order="-100" app:controller="com.android.settings.fuelgauge.batterysaver.BatterySaverButtonPreferenceController"/>
+    <Preference android:title="@string/battery_saver_schedule_settings_title" android:key="battery_saver_schedule" android:order="50" android:fragment="com.android.settings.fuelgauge.batterysaver.BatterySaverScheduleSettings" app:controller="com.android.settings.fuelgauge.batterysaver.BatterySaverSchedulePreferenceController" app:keywords="@string/keywords_battery_saver_schedule"/>
+    <SwitchPreference android:title="@string/battery_saver_sticky_title_new" android:key="battery_saver_sticky" android:summary="@string/summary_placeholder" android:order="80" app:controller="com.android.settings.fuelgauge.batterysaver.BatterySaverStickyPreferenceController" app:keywords="@string/keywords_battery_saver_sticky"/>
+    <com.android.settingslib.widget.FooterPreference android:title="@android:string/permlab_retrieve_window_content" android:selectable="true" android:key="battery_saver_footer_preference" android:order="100" app:searchable="false"/>
+</PreferenceScreen>

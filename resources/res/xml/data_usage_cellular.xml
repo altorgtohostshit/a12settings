@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:key="data_usage_cellular_screen">
+    <com.android.settings.datausage.TemplatePreferenceCategory android:title="@string/data_usage_tab_mobile" android:key="mobile_category">
+        <com.android.settings.datausage.CellDataPreference android:title="@string/data_usage_enable_mobile" android:key="data_usage_enable" app:searchable="false"/>
+        <com.android.settings.datausage.DataUsagePreference android:title="@string/cellular_data_usage" android:key="cellular_data_usage"/>
+        <com.android.settings.datausage.BillingCyclePreference android:title="@string/billing_cycle" android:key="billing_preference"/>
+    </com.android.settings.datausage.TemplatePreferenceCategory>
+</PreferenceScreen>

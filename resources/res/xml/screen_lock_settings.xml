@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/unlock_set_unlock_launch_picker_title" android:key="security_settings_password_sub_screen" app:searchable="false">
+    <SwitchPreference android:title="@string/lockpattern_settings_enable_visible_pattern_title" android:key="visiblepattern"/>
+    <com.android.settings.display.TimeoutListPreference android:entries="@array/lock_after_timeout_entries" android:title="@string/lock_after_timeout" android:key="lock_after_timeout" android:summary="@string/summary_placeholder" android:entryValues="@array/lock_after_timeout_values"/>
+    <SwitchPreference android:title="@string/lockpattern_settings_enable_power_button_instantly_locks" android:key="power_button_instantly_locks"/>
+</PreferenceScreen>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:left="@dimen/settingslib_illustration_padding" android:top="@dimen/settingslib_illustration_padding" android:right="@dimen/settingslib_illustration_padding" android:bottom="@dimen/settingslib_illustration_padding">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/settingslib_protection_color"/>
+            <corners android:radius="28dp"/>
+        </shape>
+    </item>
+</layer-list>

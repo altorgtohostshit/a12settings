@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/graphics_driver_dashboard_title">
+    <com.android.settingslib.widget.TopIntroPreference android:title="@string/graphics_driver_footer_text" android:key="top_info_graphics_driver" app:controller="com.android.settings.development.graphicsdriver.GraphicsDriverTopIntroPreferenceController"/>
+    <ListPreference android:title="@string/graphics_driver_all_apps_preference_title" android:key="graphics_driver_all_apps_preference" android:dialogTitle="@string/graphics_driver_all_apps_preference_title" app:controller="com.android.settings.development.graphicsdriver.GraphicsDriverEnableForAllAppsPreferenceController" app:allowDividerAbove="true"/>
+    <PreferenceCategory android:title="@string/graphics_driver_app_preference_title" android:key="graphics_driver_category" app:controller="com.android.settings.development.graphicsdriver.GraphicsDriverAppPreferenceController"/>
+</PreferenceScreen>

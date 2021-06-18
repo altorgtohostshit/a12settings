@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/gesture_settings_activity_title" android:key="gesture_navigation_settings_page" app:keywords="@string/keywords_gesture_navigation_settings">
+    <PreferenceCategory android:persistent="false" android:title="@string/back_sensitivity_dialog_title" android:key="back_sensitivity_category">
+        <com.android.settings.widget.LabeledSeekBarPreference android:max="2" android:title="@string/left_edge" android:selectable="true" android:key="gesture_left_back_sensitivity" app:textEnd="@string/high_label" app:textStart="@string/low_label"/>
+        <com.android.settings.widget.LabeledSeekBarPreference android:max="2" android:title="@string/right_edge" android:selectable="true" android:key="gesture_right_back_sensitivity" app:textEnd="@string/high_label" app:textStart="@string/low_label"/>
+    </PreferenceCategory>
+    <com.android.settingslib.widget.FooterPreference android:title="@string/back_sensitivity_dialog_message" android:selectable="false" android:key="gesture_navigation_settings_footer" app:allowDividerAbove="true" app:searchable="false"/>
+</PreferenceScreen>

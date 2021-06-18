@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/gesture_tap_title">
+    <com.android.settings.widget.VideoPreference android:key="gesture_tap_video" app:animation="@raw/gesture_tap" app:preview="@drawable/gesture_tap"/>
+    <SwitchPreference android:title="@string/gesture_tap_title" android:key="gesture_tap_toggle" android:summary="@string/gesture_tap_summary" app:controller="com.google.android.settings.aware.TapGesturePreferenceController" app:allowDividerAbove="true" app:keywords="@string/keywords_gesture_tap"/>
+    <com.android.settingslib.widget.FooterPreference android:title="@string/gesture_tap_footer" android:selectable="false" android:key="tap_gesture_footer" app:controller="com.google.android.settings.aware.TapGestureFooterPreferenceController" app:searchable="false"/>
+</PreferenceScreen>

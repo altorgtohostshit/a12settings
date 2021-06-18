@@ -1,0 +1,40 @@
+package com.google.android.material;
+
+public final class R$string {
+    public static final int bottomsheet_action_expand_halfway = 2130969824;
+    public static final int character_counter_content_description = 2130969979;
+    public static final int character_counter_overflowed_content_description = 2130969980;
+    public static final int character_counter_pattern = 2130969981;
+    public static final int clear_text_end_icon_content_description = 2130970006;
+    public static final int error_icon_content_description = 2130970781;
+    public static final int exposed_dropdown_menu_content_description = 2130970797;
+    public static final int item_view_role_description = 2130971244;
+    public static final int material_slider_range_end = 2130971711;
+    public static final int material_slider_range_start = 2130971712;
+    public static final int mtrl_badge_numberless_content_description = 2130971890;
+    public static final int mtrl_chip_close_icon_content_description = 2130971891;
+    public static final int mtrl_exceed_max_badge_number_content_description = 2130971892;
+    public static final int mtrl_exceed_max_badge_number_suffix = 2130971893;
+    public static final int mtrl_picker_announce_current_selection = 2130971896;
+    public static final int mtrl_picker_date_header_selected = 2130971899;
+    public static final int mtrl_picker_date_header_unselected = 2130971901;
+    public static final int mtrl_picker_day_of_week_column_header = 2130971902;
+    public static final int mtrl_picker_invalid_format = 2130971903;
+    public static final int mtrl_picker_invalid_format_example = 2130971904;
+    public static final int mtrl_picker_invalid_format_use = 2130971905;
+    public static final int mtrl_picker_invalid_range = 2130971906;
+    public static final int mtrl_picker_navigate_to_year_description = 2130971907;
+    public static final int mtrl_picker_out_of_range = 2130971908;
+    public static final int mtrl_picker_range_header_only_end_selected = 2130971909;
+    public static final int mtrl_picker_range_header_only_start_selected = 2130971910;
+    public static final int mtrl_picker_range_header_selected = 2130971911;
+    public static final int mtrl_picker_range_header_unselected = 2130971913;
+    public static final int mtrl_picker_text_input_day_abbr = 2130971918;
+    public static final int mtrl_picker_text_input_month_abbr = 2130971919;
+    public static final int mtrl_picker_text_input_year_abbr = 2130971920;
+    public static final int mtrl_picker_toggle_to_calendar_input_mode = 2130971921;
+    public static final int mtrl_picker_toggle_to_day_selection = 2130971922;
+    public static final int mtrl_picker_toggle_to_text_input_mode = 2130971923;
+    public static final int mtrl_picker_toggle_to_year_selection = 2130971924;
+    public static final int password_toggle_content_description = 2130972258;
+}

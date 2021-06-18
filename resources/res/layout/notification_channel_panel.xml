@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/main_content" android:background="@drawable/settings_panel_background" android:layout_width="match_parent" android:layout_height="@dimen/output_switcher_slice_max_height">
+    <FrameLayout android:id="@android:id/action_menu_presenter" android:layout_width="match_parent" android:layout_height="0px" android:layout_weight="1"/>
+    <View android:id="@+id/footer_divider" android:background="?android:attr/dividerHorizontal" android:layout_width="match_parent" android:layout_height="@dimen/horizontal_divider_height"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/footer" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/see_more" android:layout_width="wrap_content" android:layout_height="48dp" android:text="@string/see_more" android:layout_marginStart="12dp" style="@android:style/Animation.VoiceInteractionSession"/>
+        <Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <Button android:id="@+id/done" android:layout_width="wrap_content" android:layout_height="48dp" android:text="@string/done" android:layout_marginEnd="12dp" style="@android:style/Animation.VoiceInteractionSession"/>
+    </LinearLayout>
+</LinearLayout>

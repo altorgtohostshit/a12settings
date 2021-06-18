@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@android:style/Widget.Material.KeyboardView" android:id="@+id/sliding_tab_selected_indicator" android:background="?android:attr/colorAccent" android:layout_width="wrap_content" android:layout_height="@dimen/pager_tabs_selected_indicator_height"/>

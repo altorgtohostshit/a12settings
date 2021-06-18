@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:inset="4dp">
+    <shape android:shape="rectangle">
+        <corners android:radius="?unknown_attr_ref: 1010571"/>
+        <solid android:color="?android:attr/colorBackground"/>
+    </shape>
+</inset>

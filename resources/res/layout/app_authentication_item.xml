@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/AppAuthenticationPolicyItem">
+    <ImageView android:id="@+id/app_icon" android:layout_width="24dp" android:layout_height="24dp" style="@style/AppAuthenticationPolicyIcon"/>
+    <RelativeLayout android:orientation="vertical" android:id="@+id/app_details" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:layout_toLeftOf="@+id/expand" android:layout_toRightOf="@+id/app_icon">
+        <TextView android:id="@+id/app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/AppAuthenticationPolicyText"/>
+        <TextView android:id="@+id/number_of_uris" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/app_name" style="@style/AppAuthenticationPolicyNumberOfUrisText"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/uris" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/app_name"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/expand" android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" style="@style/AppAuthenticationExpander"/>
+</RelativeLayout>

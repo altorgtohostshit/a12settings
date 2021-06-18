@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:key="data_usage_wifi_screen">
+    <com.android.settings.datausage.TemplatePreferenceCategory android:title="@string/wifi" android:key="wifi_category">
+        <com.android.settings.datausage.DataUsagePreference android:title="@string/wifi_data_usage" android:key="wifi_data_usage" app:searchable="false"/>
+    </com.android.settings.datausage.TemplatePreferenceCategory>
+</PreferenceScreen>

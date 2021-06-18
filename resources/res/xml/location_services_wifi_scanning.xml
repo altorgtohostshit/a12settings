@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/location_scanning_wifi_always_scanning_title">
+    <com.android.settingslib.widget.MainSwitchPreference android:title="@string/location_scanning_wifi_always_scanning_title" android:key="wifi_always_scanning_switch" app:controller="com.android.settings.location.WifiScanningMainSwitchPreferenceController"/>
+    <com.android.settingslib.widget.FooterPreference android:title="@string/location_scanning_wifi_always_scanning_description" android:selectable="false" android:key="wifi_always_scanning_footer" app:searchable="false"/>
+</PreferenceScreen>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <view android:id="@+id/frame" android:layout_width="match_parent" android:layout_height="wrap_content" class="com.android.settings.TouchBlockingFrameLayout">
+        <LinearLayout android:orientation="vertical" android:paddingTop="16dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="16dp" android:paddingEnd="16dp">
+            <TextView android:textAppearance="@android:style/Preference.DeviceDefault.SwitchPreference" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/font_size_preview_text_headline"/>
+            <TextView android:textAppearance="@android:style/TextAppearance.Holo.SearchResult" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/font_size_preview_text_title"/>
+            <TextView android:textAppearance="@android:style/WindowTitleBackground.DeviceDefault" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/font_size_preview_text_subtitle"/>
+            <TextView android:textAppearance="@android:style/Preference.DeviceDefault.DialogPreference.YesNoPreference" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/font_size_preview_text_body"/>
+        </LinearLayout>
+    </view>
+</androidx.core.widget.NestedScrollView>

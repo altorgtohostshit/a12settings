@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.setupdesign.GlifLayout xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:icon="@drawable/ic_lock" android:id="@+id/setup_wizard_layout" android:layout="@layout/sud_glif_blank_template" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.android.internal.widget.LinearLayoutWithDefaultTouchRecepient android:orientation="vertical" android:id="@+id/topLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="clip_vertical|clip_horizontal" android:id="@+id/sud_layout_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_lock" style="@style/SudGlifIcon"/>
+            <TextView android:id="@+id/suc_layout_title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SudGlifHeaderTitle"/>
+            <TextView android:id="@+id/sud_layout_subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="?attr/sudMarginStart" android:layout_marginEnd="?attr/sudMarginEnd" style="@style/SudDescription.Glif"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="0dp" android:paddingRight="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SudContentFrame">
+            <com.google.android.setupdesign.view.FillContentLayout android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1" style="@style/LockPatternContainerStyle">
+                <com.android.internal.widget.LockPatternView android:layout_gravity="center" android:id="@+id/lockPattern" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </com.google.android.setupdesign.view.FillContentLayout>
+            <TextView android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@+id/errorText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginStart="?attr/sudMarginStart" android:layout_marginEnd="?attr/sudMarginEnd" android:accessibilityLiveRegion="polite" style="@style/TextAppearance.ErrorText"/>
+            <Button android:id="@+id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="80dp" android:text="@string/cancel" android:layout_marginStart="?attr/sudMarginStart" android:layout_marginEnd="?attr/sudMarginEnd" style="@style/SudGlifButton.Secondary"/>
+        </LinearLayout>
+    </com.android.internal.widget.LinearLayoutWithDefaultTouchRecepient>
+</com.google.android.setupdesign.GlifLayout>

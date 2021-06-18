@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/calls_and_sms" android:key="provider_model_calls_and_sms_screen">
+    <ListPreference android:icon="@drawable/ic_phone" android:title="@string/calls_preference_title" android:key="provider_model_calls_preference" android:order="10" app:controller="com.android.settings.network.telephony.CallsDefaultSubscriptionController"/>
+    <ListPreference android:icon="@drawable/ic_sms" android:title="@string/sms_preference_title" android:key="provider_model_sms_preference" android:order="15" app:controller="com.android.settings.network.telephony.SmsDefaultSubscriptionController"/>
+    <PreferenceCategory android:title="@string/calls_and_sms_category" android:key="provider_model_calling_category" android:order="20" app:controller="com.android.settings.network.telephony.NetworkProviderWifiCallingPreferenceController" app:allowDividerAbove="true"/>
+    <PreferenceCategory android:title="@string/backup_calling_settings_title" android:key="provider_model_backup_calling_category" android:order="25" app:controller="com.android.settings.network.telephony.NetworkProviderBackupCallingPreferenceController" app:allowDividerAbove="true"/>
+</PreferenceScreen>

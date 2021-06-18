@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/notifications_title" android:key="app_notifications">
+    <com.android.settingslib.widget.LayoutPreference android:layout="@layout/settings_entity_header" android:key="pref_app_header"/>
+    <com.android.settings.widget.SettingsMainSwitchPreference android:key="block"/>
+    <com.android.settingslib.widget.FooterPreference android:key="block_desc"/>
+    <PreferenceCategory android:visibility="gone" android:title="@string/conversations_category_title" android:key="conversations" app:allowDividerAbove="false" app:allowDividerBelow="false"/>
+    <com.android.settingslib.RestrictedSwitchPreference android:title="@string/conversation_section_switch_title" android:key="invalid_conversation_switch"/>
+    <Preference android:key="invalid_conversation_info"/>
+    <Preference android:icon="@drawable/ic_create_bubble" android:title="@string/notification_bubbles_title" android:key="bubble_pref_link" app:controller="com.android.settings.notification.app.BubbleSummaryPreferenceController" app:allowDividerAbove="false"/>
+    <PreferenceCategory android:layout="@layout/empty_view" android:key="channels" app:allowDividerAbove="true" app:allowDividerBelow="false"/>
+    <com.android.settingslib.RestrictedSwitchPreference android:title="@string/allow_interruption" android:key="allow_sound" android:summary="@string/allow_interruption_summary"/>
+    <com.android.settings.RestrictedListPreference android:title="@string/app_notification_visibility_override_title" android:key="visibility_override"/>
+    <com.android.settingslib.RestrictedSwitchPreference android:title="@string/app_notification_override_dnd_title" android:key="bypass_dnd" android:summary="@string/app_notification_override_dnd_summary" app:useAdditionalSummary="true"/>
+    <PreferenceCategory android:key="app_advanced" android:order="1000" app:initialExpandedChildrenCount="0">
+        <com.android.settingslib.RestrictedSwitchPreference android:title="@string/notification_badge_title" android:key="badge" android:order="1001" app:restrictedSwitchSummary="@string/enabled_by_admin" app:useAdditionalSummary="true"/>
+        <Preference android:title="@string/app_settings_link" android:key="app_link" android:order="1003"/>
+    </PreferenceCategory>
+    <com.android.settingslib.widget.FooterPreference android:key="desc" android:order="5000"/>
+    <com.android.settingslib.widget.FooterPreference android:key="deleted" android:order="8000"/>
+</PreferenceScreen>

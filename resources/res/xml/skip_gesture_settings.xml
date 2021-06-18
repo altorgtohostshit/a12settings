@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/gesture_skip_title">
+    <com.android.settings.widget.VideoPreference android:key="gesture_skip_video" app:animation="@raw/gesture_skip" app:preview="@drawable/gesture_skip"/>
+    <SwitchPreference android:title="@string/gesture_skip_title" android:key="gesture_skip" android:summary="@string/gesture_skip_summary" app:controller="com.google.android.settings.aware.SkipGesturePreferenceController" app:allowDividerAbove="true" app:keywords="@string/keywords_gesture_skip"/>
+    <ListPreference android:entries="@array/skip_direction_entries" android:title="@string/gesture_skip_direction_title" android:key="gesture_skip_direction" android:entryValues="@array/skip_direction_values" app:controller="com.google.android.settings.aware.SkipGestureDirectionPreferenceController"/>
+    <com.android.settingslib.widget.FooterPreference android:title="@string/gesture_skip_footer" android:key="skip_gesture_footer" app:controller="com.google.android.settings.aware.SkipGestureFooterPreferenceController" app:searchable="false"/>
+</PreferenceScreen>

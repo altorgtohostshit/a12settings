@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/bluetooth_settings_title">
+    <Preference android:title="@string/bluetooth_device_name" android:key="bluetooth_screen_bt_pair_rename_devices" android:summary="@string/summary_placeholder" app:controller="com.android.settings.bluetooth.BluetoothDeviceRenamePreferenceController"/>
+    <com.android.settingslib.RestrictedPreference android:icon="@drawable/ic_add_24dp" android:title="@string/bluetooth_pairing_pref_title" android:key="bluetooth_screen_add_bt_devices" android:summary="@string/connected_device_add_device_summary" android:fragment="com.android.settings.bluetooth.BluetoothPairingDetail" app:controller="com.android.settings.connecteddevice.AddDevicePreferenceController" app:allowDividerAbove="true" app:searchable="false" app:userRestriction="no_config_bluetooth" app:useAdminDisabledSummary="true"/>
+    <com.android.settingslib.widget.FooterPreference android:selectable="false" android:key="bluetooth_screen_footer" app:searchable="false"/>
+</PreferenceScreen>

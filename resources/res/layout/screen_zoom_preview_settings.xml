@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:importantForAccessibility="noHideDescendants">
+    <view android:id="@+id/frame" android:layout_width="match_parent" android:layout_height="wrap_content" class="com.android.settings.TouchBlockingFrameLayout">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:paddingTop="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="8dp">
+                <ImageView android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_settings_wireless" android:scaleType="center" android:tint="?android:attr/colorAccent"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:paddingStart="16dp">
+                    <TextView android:textAppearance="@android:style/WindowTitleBackground.DeviceDefault" android:textColor="?android:attr/textColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wifi_settings"/>
+                    <TextView android:textAppearance="@android:style/Preference.DeviceDefault.DialogPreference.YesNoPreference" android:textColor="?android:attr/textColorSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wifi_display_status_not_available"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingTop="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="8dp">
+                <ImageView android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_settings_data_usage" android:scaleType="center" android:tint="?android:attr/colorAccent"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:paddingStart="16dp">
+                    <TextView android:textAppearance="@android:style/WindowTitleBackground.DeviceDefault" android:textColor="?android:attr/textColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/data_usage_summary_title"/>
+                    <TextView android:textAppearance="@android:style/Preference.DeviceDefault.DialogPreference.YesNoPreference" android:textColor="?android:attr/textColorSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_data_usage"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingTop="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="8dp">
+                <ImageView android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_settings_display" android:scaleType="center" android:tint="?android:attr/colorAccent"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:paddingStart="16dp">
+                    <TextView android:textAppearance="@android:style/WindowTitleBackground.DeviceDefault" android:textColor="?android:attr/textColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/display_settings_title"/>
+                    <TextView android:textAppearance="@android:style/Preference.DeviceDefault.DialogPreference.YesNoPreference" android:textColor="?android:attr/textColorSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/display_summary_example"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingTop="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="8dp">
+                <ImageView android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_settings_sound" android:scaleType="center" android:tint="?android:attr/colorAccent"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:paddingStart="16dp">
+                    <TextView android:textAppearance="@android:style/WindowTitleBackground.DeviceDefault" android:textColor="?android:attr/textColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sound_settings"/>
+                    <TextView android:textAppearance="@android:style/Preference.DeviceDefault.DialogPreference.YesNoPreference" android:textColor="?android:attr/textColorSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sound_settings_example_summary"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingTop="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="8dp">
+                <ImageView android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_settings_applications" android:scaleType="center" android:tint="?android:attr/colorAccent"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:paddingStart="16dp">
+                    <TextView android:textAppearance="@android:style/WindowTitleBackground.DeviceDefault" android:textColor="?android:attr/textColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/applications_settings"/>
+                    <TextView android:textAppearance="@android:style/Preference.DeviceDefault.DialogPreference.YesNoPreference" android:textColor="?android:attr/textColorSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/apps_summary_example"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </view>
+</androidx.core.widget.NestedScrollView>

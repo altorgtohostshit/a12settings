@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/manage_device_admin" android:key="device_admin_settings" app:controller="com.android.settings.applications.specialaccess.deviceadmin.DeviceAdminListPreferenceController" app:searchable="false">
+    <com.android.settingslib.widget.FooterPreference android:title="@string/no_device_admins" android:selectable="false" android:key="device_admin_footer" app:searchable="false"/>
+</PreferenceScreen>

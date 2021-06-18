@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/legal_information">
+    <Preference android:title="@string/copyright_title" android:key="copyright" app:controller="com.android.settings.deviceinfo.legal.CopyrightPreferenceController"/>
+    <Preference android:title="@string/license_title" android:key="license" app:controller="com.android.settings.deviceinfo.legal.LicensePreferenceController"/>
+    <Preference android:title="@string/terms_title" android:key="terms" app:controller="com.android.settings.deviceinfo.legal.TermsPreferenceController"/>
+    <Preference android:title="@string/module_license_title" android:key="module_license" android:fragment="com.android.settings.deviceinfo.legal.ModuleLicensesDashboard" app:controller="com.android.settings.deviceinfo.legal.ModuleLicensesListPreferenceController"/>
+    <Preference android:title="@string/webview_license_title" android:key="webview_license" app:controller="com.android.settings.deviceinfo.legal.WebViewLicensePreferenceController"/>
+    <Preference android:title="@string/wallpaper_attributions" android:selectable="false" android:key="wallpaper_attributions" android:summary="@string/wallpaper_attributions_values" app:controller="com.android.settings.deviceinfo.legal.WallpaperAttributionsPreferenceController"/>
+</PreferenceScreen>

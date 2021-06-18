@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/hardware_info" app:keywords="@string/keywords_model_and_hardware">
+    <Preference android:title="@string/model_info" android:selectable="false" android:key="hardware_info_device_model" android:summary="@string/summary_placeholder" app:controller="com.android.settings.deviceinfo.hardwareinfo.DeviceModelPreferenceController" app:enableCopying="true"/>
+    <Preference android:title="@string/status_serial_number" android:selectable="false" android:key="hardware_info_device_serial" android:summary="@string/summary_placeholder" app:controller="com.android.settings.deviceinfo.hardwareinfo.SerialNumberPreferenceController" app:enableCopying="true"/>
+    <Preference android:title="@string/hardware_revision" android:selectable="false" android:key="hardware_info_device_revision" android:summary="@string/summary_placeholder" app:controller="com.android.settings.deviceinfo.hardwareinfo.HardwareRevisionPreferenceController" app:enableCopying="true"/>
+</PreferenceScreen>

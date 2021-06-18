@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/account_dashboard_title" android:key="user_and_account_settings_screen" app:keywords="@string/keywords_accounts">
+    <PreferenceCategory android:persistent="false" android:title="@string/autofill_passwords" android:key="passwords_category" android:order="10" app:controller="com.android.settings.applications.autofill.PasswordsPreferenceController" app:keywords="@string/autofill_keywords"/>
+    <com.android.settings.widget.WorkOnlyCategory android:title="@string/default_for_work" android:key="autofill_work_app_defaults" android:order="30">
+        <com.android.settings.widget.GearPreference android:title="@string/autofill_app" android:key="default_autofill_work" android:fragment="com.android.settings.applications.defaultapps.DefaultAutofillPicker" app:searchable="false">
+            <extra android:name="for_work" android:value="true"/>
+        </com.android.settings.widget.GearPreference>
+    </com.android.settings.widget.WorkOnlyCategory>
+    <PreferenceCategory android:title="@string/account_settings" android:key="accounts_category" android:order="100">
+        <PreferenceCategory android:key="dashboard_tile_placeholder" android:order="130"/>
+        <SwitchPreference android:title="@string/auto_sync_account_title" android:key="auto_sync_account_data" android:summary="@string/auto_sync_account_summary" android:order="200" app:allowDividerAbove="true"/>
+        <SwitchPreference android:title="@string/account_settings_menu_auto_sync_work" android:key="auto_sync_work_account_data" android:summary="@string/auto_sync_account_summary" android:order="210"/>
+    </PreferenceCategory>
+</PreferenceScreen>

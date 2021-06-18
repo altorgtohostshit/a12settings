@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.setupdesign.GlifLayout xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:icon="@drawable/ic_assist_gesture" android:id="@+id/layout" android:layout_width="match_parent" android:layout_height="match_parent" app:sucHeaderText="@string/columbus_gesture_training_launch_title">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/apps" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/SudContentFrame"/>
+</com.google.android.setupdesign.GlifLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/reset_dashboard_title">
+    <com.android.settingslib.RestrictedPreference android:title="@string/reset_network_title" android:key="network_reset_pref" android:fragment="com.android.settings.ResetNetwork" app:userRestriction="no_network_reset" app:useAdminDisabledSummary="true"/>
+    <Preference android:title="@string/reset_app_preferences" android:key="reset_app_prefs"/>
+    <Preference android:title="@string/reset_esim_title" android:key="erase_euicc_data" app:controller="com.android.settings.network.EraseEuiccDataController"/>
+    <com.android.settingslib.RestrictedPreference android:title="@string/main_clear_title" android:key="factory_reset" android:fragment="com.android.settings.MainClear" app:keywords="@string/keywords_factory_data_reset" app:userRestriction="no_factory_reset" app:useAdminDisabledSummary="true"/>
+</PreferenceScreen>

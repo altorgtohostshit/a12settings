@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/zen_mode_restrict_notifications_title">
+    <PreferenceCategory android:title="@string/zen_mode_restrict_notifications_category" android:key="restrict_category">
+        <com.android.settingslib.widget.RadioButtonPreference android:title="@string/zen_mode_restrict_notifications_mute" android:key="zen_mute_notifications" android:summary="@string/zen_mode_restrict_notifications_mute_summary" app:searchable="false"/>
+        <com.android.settingslib.widget.RadioButtonPreference android:title="@string/zen_mode_restrict_notifications_hide" android:key="zen_hide_notifications" android:summary="@string/zen_mode_restrict_notifications_hide_summary" app:searchable="false"/>
+        <com.android.settingslib.widget.RadioButtonPreference android:title="@string/zen_mode_restrict_notifications_custom" android:key="zen_custom" app:searchable="false"/>
+    </PreferenceCategory>
+    <com.android.settingslib.widget.FooterPreference/>
+</PreferenceScreen>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SettingsBarChart">
+    <TextView android:id="@+id/bar_chart_title" style="@style/SettingsBarChartTitle"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/bar_views_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="bottom|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+            <com.android.settingslib.widget.BarView android:id="@+id/bar_view1" app:barColor="@color/settings_bar_view_1_color" style="@style/SettingsBarViewStyle"/>
+            <com.android.settingslib.widget.BarView android:id="@+id/bar_view2" app:barColor="@color/settings_bar_view_2_color" style="@style/SettingsBarViewStyle"/>
+            <com.android.settingslib.widget.BarView android:id="@+id/bar_view3" app:barColor="@color/settings_bar_view_3_color" style="@style/SettingsBarViewStyle"/>
+            <com.android.settingslib.widget.BarView android:id="@+id/bar_view4" app:barColor="@color/settings_bar_view_4_color" style="@style/SettingsBarViewStyle"/>
+        </LinearLayout>
+        <Button android:id="@+id/bar_chart_details" style="@style/SettingsBarChartDetailsButton"/>
+    </LinearLayout>
+    <TextView android:id="@+id/empty_view" style="@style/SettingsBarChartEmptyText"/>
+</LinearLayout>

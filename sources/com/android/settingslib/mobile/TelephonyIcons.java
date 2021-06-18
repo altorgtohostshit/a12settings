@@ -1,0 +1,147 @@
+package com.android.settingslib.mobile;
+
+import com.android.settingslib.AccessibilityContentDescriptions;
+import com.android.settingslib.R$drawable;
+import com.android.settingslib.R$string;
+import com.android.settingslib.SignalIcon$MobileIconGroup;
+import java.util.HashMap;
+import java.util.Map;
+
+public class TelephonyIcons {
+    public static final SignalIcon$MobileIconGroup CARRIER_MERGED_WIFI;
+    public static final SignalIcon$MobileIconGroup CARRIER_NETWORK_CHANGE;
+    public static final SignalIcon$MobileIconGroup DATA_DISABLED;
+
+    /* renamed from: E */
+    public static final SignalIcon$MobileIconGroup f108E;
+    public static final int FLIGHT_MODE_ICON = R$drawable.stat_sys_airplane_mode;
+    public static final SignalIcon$MobileIconGroup FOUR_G;
+    public static final SignalIcon$MobileIconGroup FOUR_G_PLUS;
+
+    /* renamed from: G */
+    public static final SignalIcon$MobileIconGroup f109G;
+
+    /* renamed from: H */
+    public static final SignalIcon$MobileIconGroup f110H;
+    public static final SignalIcon$MobileIconGroup H_PLUS;
+    public static final int ICON_1X;
+    public static final int ICON_3G;
+    public static final int ICON_4G;
+    public static final int ICON_4G_PLUS;
+    public static final int ICON_5G;
+    public static final int ICON_5G_E;
+    public static final int ICON_5G_PLUS;
+    public static final int ICON_CWF;
+    public static final int ICON_E;
+    public static final int ICON_G;
+    public static final int ICON_H;
+    public static final int ICON_H_PLUS;
+    public static final int ICON_LTE;
+    public static final int ICON_LTE_PLUS;
+    public static final Map<String, SignalIcon$MobileIconGroup> ICON_NAME_TO_ICON;
+    public static final SignalIcon$MobileIconGroup LTE;
+    public static final SignalIcon$MobileIconGroup LTE_CA_5G_E;
+    public static final SignalIcon$MobileIconGroup LTE_PLUS;
+    public static final int[] MOBILE_CALL_STRENGTH_ICONS = {R$drawable.ic_mobile_call_strength_0, R$drawable.ic_mobile_call_strength_1, R$drawable.ic_mobile_call_strength_2, R$drawable.ic_mobile_call_strength_3, R$drawable.ic_mobile_call_strength_4};
+    public static final SignalIcon$MobileIconGroup NOT_DEFAULT_DATA;
+    public static final SignalIcon$MobileIconGroup NR_5G;
+    public static final SignalIcon$MobileIconGroup NR_5G_PLUS;
+    public static final SignalIcon$MobileIconGroup ONE_X;
+    public static final SignalIcon$MobileIconGroup THREE_G;
+    public static final SignalIcon$MobileIconGroup UNKNOWN;
+    public static final SignalIcon$MobileIconGroup WFC;
+    public static final int[] WIFI_CALL_STRENGTH_ICONS = {R$drawable.ic_wifi_call_strength_0, R$drawable.ic_wifi_call_strength_1, R$drawable.ic_wifi_call_strength_2, R$drawable.ic_wifi_call_strength_3, R$drawable.ic_wifi_call_strength_4};
+
+    static {
+        int i = R$drawable.ic_lte_mobiledata;
+        ICON_LTE = i;
+        int i2 = R$drawable.ic_lte_plus_mobiledata;
+        ICON_LTE_PLUS = i2;
+        int i3 = R$drawable.ic_g_mobiledata;
+        ICON_G = i3;
+        int i4 = R$drawable.ic_e_mobiledata;
+        ICON_E = i4;
+        int i5 = R$drawable.ic_h_mobiledata;
+        ICON_H = i5;
+        int i6 = R$drawable.ic_h_plus_mobiledata;
+        ICON_H_PLUS = i6;
+        int i7 = R$drawable.ic_3g_mobiledata;
+        ICON_3G = i7;
+        int i8 = R$drawable.ic_4g_mobiledata;
+        ICON_4G = i8;
+        int i9 = R$drawable.ic_4g_plus_mobiledata;
+        ICON_4G_PLUS = i9;
+        int i10 = R$drawable.ic_5g_e_mobiledata;
+        ICON_5G_E = i10;
+        int i11 = R$drawable.ic_1x_mobiledata;
+        ICON_1X = i11;
+        int i12 = R$drawable.ic_5g_mobiledata;
+        ICON_5G = i12;
+        int i13 = R$drawable.ic_5g_plus_mobiledata;
+        ICON_5G_PLUS = i13;
+        int i14 = R$drawable.ic_carrier_wifi;
+        ICON_CWF = i14;
+        int[] iArr = AccessibilityContentDescriptions.PHONE_SIGNAL_STRENGTH;
+        int[] iArr2 = iArr;
+        SignalIcon$MobileIconGroup signalIcon$MobileIconGroup = new SignalIcon$MobileIconGroup("CARRIER_NETWORK_CHANGE", (int[][]) null, (int[][]) null, iArr2, 0, 0, 0, 0, iArr[0], R$string.carrier_network_change_mode, 0, false);
+        CARRIER_NETWORK_CHANGE = signalIcon$MobileIconGroup;
+        SignalIcon$MobileIconGroup signalIcon$MobileIconGroup2 = new SignalIcon$MobileIconGroup("3G", (int[][]) null, (int[][]) null, iArr, 0, 0, 0, 0, iArr[0], R$string.data_connection_3g, i7, true);
+        THREE_G = signalIcon$MobileIconGroup2;
+        SignalIcon$MobileIconGroup signalIcon$MobileIconGroup3 = new SignalIcon$MobileIconGroup("WFC", (int[][]) null, (int[][]) null, iArr2, 0, 0, 0, 0, iArr[0], 0, 0, false);
+        WFC = signalIcon$MobileIconGroup3;
+        SignalIcon$MobileIconGroup signalIcon$MobileIconGroup4 = new SignalIcon$MobileIconGroup("Unknown", (int[][]) null, (int[][]) null, iArr2, 0, 0, 0, 0, iArr[0], 0, 0, false);
+        UNKNOWN = signalIcon$MobileIconGroup4;
+        SignalIcon$MobileIconGroup signalIcon$MobileIconGroup5 = new SignalIcon$MobileIconGroup("E", (int[][]) null, (int[][]) null, iArr, 0, 0, 0, 0, iArr[0], R$string.data_connection_edge, i4, false);
+        f108E = signalIcon$MobileIconGroup5;
+        SignalIcon$MobileIconGroup signalIcon$MobileIconGroup6 = new SignalIcon$MobileIconGroup("1X", (int[][]) null, (int[][]) null, iArr, 0, 0, 0, 0, iArr[0], R$string.data_connection_cdma, i11, true);
+        ONE_X = signalIcon$MobileIconGroup6;
+        SignalIcon$MobileIconGroup signalIcon$MobileIconGroup7 = new SignalIcon$MobileIconGroup("G", (int[][]) null, (int[][]) null, iArr, 0, 0, 0, 0, iArr[0], R$string.data_connection_gprs, i3, false);
+        f109G = signalIcon$MobileIconGroup7;
+        SignalIcon$MobileIconGroup signalIcon$MobileIconGroup8 = new SignalIcon$MobileIconGroup("H", (int[][]) null, (int[][]) null, iArr, 0, 0, 0, 0, iArr[0], R$string.data_connection_3_5g, i5, false);
+        f110H = signalIcon$MobileIconGroup8;
+        SignalIcon$MobileIconGroup signalIcon$MobileIconGroup9 = new SignalIcon$MobileIconGroup("H+", (int[][]) null, (int[][]) null, iArr, 0, 0, 0, 0, iArr[0], R$string.data_connection_3_5g_plus, i6, false);
+        H_PLUS = signalIcon$MobileIconGroup9;
+        SignalIcon$MobileIconGroup signalIcon$MobileIconGroup10 = new SignalIcon$MobileIconGroup("4G", (int[][]) null, (int[][]) null, iArr, 0, 0, 0, 0, iArr[0], R$string.data_connection_4g, i8, true);
+        FOUR_G = signalIcon$MobileIconGroup10;
+        SignalIcon$MobileIconGroup signalIcon$MobileIconGroup11 = new SignalIcon$MobileIconGroup("4G+", (int[][]) null, (int[][]) null, iArr, 0, 0, 0, 0, iArr[0], R$string.data_connection_4g_plus, i9, true);
+        FOUR_G_PLUS = signalIcon$MobileIconGroup11;
+        SignalIcon$MobileIconGroup signalIcon$MobileIconGroup12 = r1;
+        SignalIcon$MobileIconGroup signalIcon$MobileIconGroup13 = signalIcon$MobileIconGroup4;
+        SignalIcon$MobileIconGroup signalIcon$MobileIconGroup14 = new SignalIcon$MobileIconGroup("LTE", (int[][]) null, (int[][]) null, iArr, 0, 0, 0, 0, iArr[0], R$string.data_connection_lte, i, true);
+        LTE = signalIcon$MobileIconGroup12;
+        SignalIcon$MobileIconGroup signalIcon$MobileIconGroup15 = signalIcon$MobileIconGroup3;
+        SignalIcon$MobileIconGroup signalIcon$MobileIconGroup16 = new SignalIcon$MobileIconGroup("LTE+", (int[][]) null, (int[][]) null, iArr, 0, 0, 0, 0, iArr[0], R$string.data_connection_lte_plus, i2, true);
+        LTE_PLUS = signalIcon$MobileIconGroup16;
+        SignalIcon$MobileIconGroup signalIcon$MobileIconGroup17 = new SignalIcon$MobileIconGroup("5Ge", (int[][]) null, (int[][]) null, iArr, 0, 0, 0, 0, iArr[0], R$string.data_connection_5ge_html, i10, true);
+        LTE_CA_5G_E = signalIcon$MobileIconGroup17;
+        SignalIcon$MobileIconGroup signalIcon$MobileIconGroup18 = new SignalIcon$MobileIconGroup("5G", (int[][]) null, (int[][]) null, iArr, 0, 0, 0, 0, iArr[0], R$string.data_connection_5g, i12, true);
+        NR_5G = signalIcon$MobileIconGroup18;
+        SignalIcon$MobileIconGroup signalIcon$MobileIconGroup19 = new SignalIcon$MobileIconGroup("5G_PLUS", (int[][]) null, (int[][]) null, iArr, 0, 0, 0, 0, iArr[0], R$string.data_connection_5g_plus, i13, true);
+        NR_5G_PLUS = signalIcon$MobileIconGroup19;
+        SignalIcon$MobileIconGroup signalIcon$MobileIconGroup20 = new SignalIcon$MobileIconGroup("DataDisabled", (int[][]) null, (int[][]) null, iArr2, 0, 0, 0, 0, iArr[0], R$string.cell_data_off_content_description, 0, false);
+        DATA_DISABLED = signalIcon$MobileIconGroup20;
+        SignalIcon$MobileIconGroup signalIcon$MobileIconGroup21 = new SignalIcon$MobileIconGroup("NotDefaultData", (int[][]) null, (int[][]) null, iArr2, 0, 0, 0, 0, iArr[0], R$string.not_default_data_content_description, 0, false);
+        NOT_DEFAULT_DATA = signalIcon$MobileIconGroup21;
+        CARRIER_MERGED_WIFI = new SignalIcon$MobileIconGroup("CWF", (int[][]) null, (int[][]) null, iArr, 0, 0, 0, 0, iArr[0], R$string.data_connection_carrier_wifi, i14, true);
+        HashMap hashMap = new HashMap();
+        ICON_NAME_TO_ICON = hashMap;
+        hashMap.put("carrier_network_change", signalIcon$MobileIconGroup);
+        hashMap.put("3g", signalIcon$MobileIconGroup2);
+        hashMap.put("wfc", signalIcon$MobileIconGroup15);
+        hashMap.put("unknown", signalIcon$MobileIconGroup13);
+        hashMap.put("e", signalIcon$MobileIconGroup5);
+        hashMap.put("1x", signalIcon$MobileIconGroup6);
+        hashMap.put("g", signalIcon$MobileIconGroup7);
+        hashMap.put("h", signalIcon$MobileIconGroup8);
+        hashMap.put("h+", signalIcon$MobileIconGroup9);
+        hashMap.put("4g", signalIcon$MobileIconGroup10);
+        hashMap.put("4g+", signalIcon$MobileIconGroup11);
+        hashMap.put("5ge", signalIcon$MobileIconGroup17);
+        hashMap.put("lte", signalIcon$MobileIconGroup12);
+        hashMap.put("lte+", signalIcon$MobileIconGroup16);
+        hashMap.put("5g", signalIcon$MobileIconGroup18);
+        hashMap.put("5g_plus", signalIcon$MobileIconGroup19);
+        hashMap.put("datadisable", signalIcon$MobileIconGroup20);
+        hashMap.put("notdefaultdata", signalIcon$MobileIconGroup21);
+    }
+}

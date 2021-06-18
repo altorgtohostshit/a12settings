@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="" android:key="conversation_settings">
+    <com.android.settingslib.widget.LayoutPreference android:layout="@layout/settings_entity_header" android:key="pref_app_header" app:allowDividerBelow="true"/>
+    <com.android.settings.notification.app.ConversationPriorityPreference android:title="@string/notification_conversation_important" android:key="priority" app:allowDividerAbove="true" app:allowDividerBelow="true"/>
+    <PreferenceCategory android:title="@string/notification_bubbles_title" android:key="bubbles">
+        <com.android.settingslib.RestrictedSwitchPreference android:icon="@drawable/ic_create_bubble" android:title="@string/bubbles_conversation_toggle_title" android:key="bubble_pref" android:summary="@string/bubbles_conversation_toggle_summary" app:restrictedSwitchSummary="@string/enabled_by_admin"/>
+        <Preference android:title="@string/bubbles_conversation_app_link" android:key="notification_bubbles"/>
+    </PreferenceCategory>
+    <Preference android:icon="@drawable/ic_demote_conversation" android:title="@string/demote_conversation_title" android:key="demote" android:summary="@string/demote_conversation_summary" app:allowDividerAbove="true"/>
+    <com.android.settingslib.widget.FooterPreference android:key="block_desc" app:allowDividerAbove="false"/>
+    <com.android.settingslib.RestrictedSwitchPreference android:title="@string/notification_importance_high_title" android:key="high_importance" android:summary="@string/notification_channel_summary_high"/>
+    <com.android.settings.notification.app.NotificationSoundPreference android:icon="@drawable/ic_notifications" android:title="@string/notification_channel_sound_title" android:key="ringtone" android:dialogTitle="@string/notification_channel_sound_title" android:showDefault="true" android:showSilent="true"/>
+    <com.android.settings.RestrictedListPreference android:icon="@drawable/ic_lock_closed" android:title="@string/app_notification_visibility_override_title" android:key="visibility_override"/>
+    <com.android.settingslib.RestrictedSwitchPreference android:title="@string/notification_channel_badge_title" android:key="badge" app:restrictedSwitchSummary="@string/enabled_by_admin" app:useAdditionalSummary="true"/>
+    <com.android.settingslib.RestrictedSwitchPreference android:title="@string/notification_show_lights_title" android:key="lights" app:useAdditionalSummary="true"/>
+    <com.android.settingslib.RestrictedSwitchPreference android:icon="@drawable/ic_volume_ringer_vibrate" android:title="@string/notification_vibrate_title" android:key="vibrate" app:useAdditionalSummary="true"/>
+</PreferenceScreen>

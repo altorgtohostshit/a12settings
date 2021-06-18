@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/about_settings" android:key="my_device_info_pref_screen">
+    <com.android.settingslib.widget.LayoutPreference android:layout="@layout/settings_entity_header" android:selectable="false" android:key="my_device_info_header" android:order="0" app:isPreferenceVisible="false"/>
+    <com.android.settings.widget.ValidatedEditTextPreference android:title="@string/my_device_info_device_name_preference_title" android:key="device_name" android:summary="@string/summary_placeholder" android:order="1" app:controller="com.android.settings.deviceinfo.DeviceNamePreferenceController" app:enableCopying="true"/>
+    <Preference android:title="@string/my_device_info_account_preference_title" android:key="branded_account" android:summary="@string/summary_placeholder" android:order="2" app:controller="com.android.settings.deviceinfo.BrandedAccountPreferenceController" app:enableCopying="true"/>
+    <Preference android:title="@string/status_number" android:selectable="false" android:key="phone_number" android:summary="@string/summary_placeholder" android:order="3" app:controller="com.android.settings.deviceinfo.PhoneNumberPreferenceController" app:enableCopying="true"/>
+    <Preference android:title="@string/legal_information" android:key="legal_container" android:order="15" android:fragment="com.android.settings.LegalSettings" app:allowDividerAbove="true"/>
+    <Preference android:title="@string/regulatory_labels" android:key="regulatory_info" android:order="16">
+        <intent android:action="android.settings.SHOW_REGULATORY_INFO"/>
+    </Preference>
+    <Preference android:title="@string/safety_and_regulatory_info" android:key="safety_info" android:order="17">
+        <intent android:action="android.settings.SHOW_SAFETY_AND_REGULATORY_INFO"/>
+    </Preference>
+    <Preference android:title="@string/sim_status_title" android:key="sim_status" android:summary="@string/summary_placeholder" android:order="18" app:allowDividerAbove="true" app:keywords="@string/keywords_sim_status" app:enableCopying="true"/>
+    <Preference android:title="@string/model_info" android:key="device_model" android:summary="@string/summary_placeholder" android:order="31" android:fragment="com.android.settings.deviceinfo.hardwareinfo.HardwareInfoFragment" app:controller="com.android.settings.deviceinfo.HardwareInfoPreferenceController" app:keywords="@string/keywords_model_and_hardware" app:enableCopying="true"/>
+    <Preference android:title="@string/status_imei" android:key="imei_info" android:summary="@string/summary_placeholder" android:order="32" app:controller="com.android.settings.deviceinfo.imei.ImeiInfoPreferenceController" app:keywords="@string/keywords_imei_info" app:enableCopying="true"/>
+    <Preference android:title="@string/firmware_version" android:key="firmware_version" android:summary="@string/summary_placeholder" android:order="42" android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings" app:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController"/>
+    <Preference android:title="@string/wifi_ip_address" android:selectable="false" android:key="wifi_ip_address" android:summary="@string/summary_placeholder" android:order="44" app:allowDividerAbove="true" app:enableCopying="true"/>
+    <Preference android:title="@string/status_wifi_mac_address" android:key="saved_accesspoints_wifi_mac_address" android:summary="@string/view_saved_network" android:order="45" android:fragment="com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSettings2" app:enableCopying="false"/>
+    <Preference android:title="@string/status_device_wifi_mac_address" android:selectable="false" android:key="wifi_mac_address" android:summary="@string/summary_placeholder" android:order="46" app:enableCopying="true"/>
+    <Preference android:title="@string/status_bt_address" android:selectable="false" android:key="bt_address" android:summary="@string/summary_placeholder" android:order="47" app:enableCopying="true"/>
+    <Preference android:title="@string/status_up_time" android:selectable="false" android:key="up_time" android:summary="@string/summary_placeholder" android:order="48"/>
+    <Preference android:title="@string/manual" android:key="manual" android:order="50">
+        <intent android:action="android.settings.SHOW_MANUAL"/>
+    </Preference>
+    <Preference android:title="@string/device_feedback" android:key="device_feedback" android:order="51" app:keywords="@string/keywords_device_feedback"/>
+    <Preference android:title="@string/fcc_equipment_id" android:key="fcc_equipment_id" android:summary="@string/summary_placeholder" android:order="52"/>
+    <Preference android:title="@string/build_number" android:key="build_number" android:summary="@string/summary_placeholder" android:order="53" app:controller="com.android.settings.deviceinfo.BuildNumberPreferenceController" app:allowDividerAbove="true" app:enableCopying="true"/>
+</PreferenceScreen>
